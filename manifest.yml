@@ -1,0 +1,7 @@
+---
+applications:
+ - name: WatGov
+   random-route: true
+   path: target/WatGov.war
+   memory: 256M
+   instances: 1

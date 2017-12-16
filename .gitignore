@@ -1,0 +1,8 @@
+target/*
+|target/WatGov.war
+.settings
+.apt_generated
+.classpath
+.factorypath
+.project
+/target/
