@@ -1,0 +1,14 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1   12/21/17 15:12:51:768 COT   12/21/17 15:12:51:768 COT java.lang.Exception com.ibm.ws.jaxrs20.server.component.JaxRsWebModuleInfoBuilder 313
+                                                                            - /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_17.12.21_15.12.51.0.log
+     1      1   12/21/17 15:14:15:387 COT   12/21/17 15:14:15:387 COT java.lang.reflect.InvocationTargetException com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean 222
+                                                                            - /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_17.12.21_15.14.15.0.log
+     2      1   12/21/17 15:14:15:729 COT   12/21/17 15:14:15:729 COT javax.servlet.ServletException com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean 271
+                                                                            - /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_17.12.21_15.14.15.1.log
+     3      1   12/21/17 15:14:15:782 COT   12/21/17 15:14:15:782 COT javax.servlet.ServletException com.ibm.ws.webcontainer.servlet.ServletWrapper.init 172
+                                                                            - /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_17.12.21_15.14.15.2.log
+     4      1   12/21/17 15:14:15:959 COT   12/21/17 15:14:15:959 COT javax.servlet.ServletException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064
+                                                                            - /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_17.12.21_15.14.15.3.log
+------+------+---------------------------+---------------------------+---------------------------

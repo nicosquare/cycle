@@ -1,0 +1,117 @@
+********************************************************************************
+product = WebSphere Application Server 17.0.0.4 (wlp-1.0.19.201712061531)
+wlp.install.dir = /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/
+java.home = /usr/lib/jvm/java-8-openjdk-amd64/jre
+java.version = 1.8.0_151
+java.runtime = OpenJDK Runtime Environment (1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12)
+os = Linux (4.10.0-42-generic; amd64) (en_US)
+process = 4719@madog-S400CA
+********************************************************************************
+[12/21/17 15:11:06:329 COT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[12/21/17 15:11:06:574 COT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/17.0.0.4/lafiles/en.html
+[12/21/17 15:11:58:234 COT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 67.275 seconds
+[12/21/17 15:11:58:847 COT] 0000001a com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[12/21/17 15:12:25:052 COT] 00000010 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[12/21/17 15:12:28:487 COT] 00000022 com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   I CWWKS4103I: Creating the LTPA keys. This may take a few seconds.
+[12/21/17 15:12:28:616 COT] 00000010 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[12/21/17 15:12:30:017 COT] 00000022 com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   A CWWKS4104A: LTPA keys created in 1.530 seconds. LTPA key file: /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/usr/servers/defaultServer/resources/security/ltpa.keys
+[12/21/17 15:12:30:025 COT] 00000022 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 1.729 seconds.
+[12/21/17 15:12:30:803 COT] 00000010 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications. 
+[12/21/17 15:12:32:030 COT] 00000016 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[12/21/17 15:12:36:460 COT] 00000010 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[12/21/17 15:12:36:462 COT] 00000010 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[12/21/17 15:12:36:463 COT] 00000010 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[12/21/17 15:12:43:124 COT] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application Cycle.
+[12/21/17 15:12:52:061 COT] 00000025 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.Exception: Found duplicated servlet mapping url, throw exception to fail application starting. com.ibm.ws.jaxrs20.server.component.JaxRsWebModuleInfoBuilder 313" at ffdc_17.12.21_15.12.51.0.log
+[12/21/17 15:12:53:042 COT] 00000025 org.jboss.weld.Version                                       I WELD-000900: 2.4.5 (Final)
+[12/21/17 15:12:55:632 COT] 00000025 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[12/21/17 15:12:55:752 COT] 00000025 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Cycle-1.0-SNAPSHOT.
+[12/21/17 15:12:55:755 COT] 00000025 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Cycle-1.0-SNAPSHOT has been bound to default_host.
+[12/21/17 15:12:55:756 COT] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.17:9080/Cycle/
+[12/21/17 15:12:55:823 COT] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application Cycle started in 12.699 seconds.
+[12/21/17 15:12:56:232 COT] 00000024 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/Cycle
+[12/21/17 15:12:56:611 COT] 00000024 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[12/21/17 15:13:00:276 COT] 00000024 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[12/21/17 15:13:00:911 COT] 00000022 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/madog/Documents/proyectos/CYCLE/cycle/app/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[12/21/17 15:13:09:643 COT] 0000001a com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [jsp-2.3, ejbLite-3.2, managedBeans-1.0, servlet-3.1, jsf-2.2, beanValidation-1.1, ssl-1.0, jndi-1.0, appSecurity-2.0, jsonp-1.0, jdbc-4.1, jaxrs-2.0, el-3.0, jaxrsClient-2.0, json-1.0, jpaContainer-2.1, cdi-1.2, distributedMap-1.0, webProfile-7.0, websocket-1.1, jpa-2.1].
+[12/21/17 15:13:09:644 COT] 0000001a com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 71.502 seconds.
+[12/21/17 15:13:09:644 COT] 0000001a com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[12/21/17 15:13:28:282 COT] 00000025 com.ibm.ws.ssl.internal.SSLConfigValidator                   A CWPKI0817A: The default SSL configuration expects a <keyStore> element with an id value of defaultKeyStore, and a password. The defaultKeyStore <keyStore> element is missing, or the password is not specified. Either define the missing element: <keyStore id="defaultKeyStore" password="yourpassword" />, or change the default SSL configuration to use an existing keystore. See the following example: <ssl id="defaultSSLConfig" keyStoreRef="newKeyStore" />.
+[12/21/17 15:14:07:654 COT] 00000024 SystemOut                                                    O Running locally. Looking for credentials in cloudant.properties
+[12/21/17 15:14:07:753 COT] 00000024 SystemOut                                                    O Connecting to Cloudant
+[12/21/17 15:14:14:894 COT] 00000024 com.cloudant.http.interceptors.CookieInterceptor             E Failed to get cookie from server, response code 503, cookie authentication will not be attempted again
+[12/21/17 15:14:15:728 COT] 00000024 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.reflect.InvocationTargetException com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean 222" at ffdc_17.12.21_15.14.15.0.log
+[12/21/17 15:14:15:781 COT] 00000024 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "javax.servlet.ServletException: Resource class wasdev.sample.rest.VisitorAPI can not be instantiated due to InvocationTargetException com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean 271" at ffdc_17.12.21_15.14.15.1.log
+[12/21/17 15:14:15:853 COT] 00000024 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "javax.servlet.ServletException: Resource class wasdev.sample.rest.VisitorAPI can not be instantiated due to InvocationTargetException com.ibm.ws.webcontainer.servlet.ServletWrapper.init 172" at ffdc_17.12.21_15.14.15.2.log
+[12/21/17 15:14:15:853 COT] 00000024 com.ibm.ws.webcontainer.servlet                              E SRVE0271E: Uncaught init() exception created by servlet [wasdev.sample.rest.VisitorAPI] in application [Cycle]: javax.servlet.ServletException: Resource class wasdev.sample.rest.VisitorAPI can not be instantiated due to InvocationTargetException
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.createSingletonInstance(LibertyJaxRsServerFactoryBean.java:224)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.onApplicationInit(LibertyJaxRsServerFactoryBean.java:144)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.doInit(LibertyJaxRsServerFactoryBean.java:263)
+	at com.ibm.ws.jaxrs20.server.JaxRsWebEndpointImpl.init(JaxRsWebEndpointImpl.java:66)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.init(IBMRestServlet.java:64)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:297)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:598)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:440)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1138)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4962)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:995)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:957)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:357)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:316)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:499)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:433)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:313)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:501)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:571)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:926)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1015)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[12/21/17 15:14:15:963 COT] 00000024 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "javax.servlet.ServletException: Resource class wasdev.sample.rest.VisitorAPI can not be instantiated due to InvocationTargetException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_17.12.21_15.14.15.3.log
+[12/21/17 15:14:15:964 COT] 00000024 com.ibm.ws.webcontainer.webapp                               E SRVE0315E: An exception occurred: java.lang.Throwable: javax.servlet.ServletException: Resource class wasdev.sample.rest.VisitorAPI can not be instantiated due to InvocationTargetException
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5006)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:995)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:957)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:357)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:316)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:499)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:433)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:313)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:501)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:571)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:926)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1015)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: Resource class wasdev.sample.rest.VisitorAPI can not be instantiated due to InvocationTargetException
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.createSingletonInstance(LibertyJaxRsServerFactoryBean.java:224)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.onApplicationInit(LibertyJaxRsServerFactoryBean.java:144)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.doInit(LibertyJaxRsServerFactoryBean.java:263)
+	at com.ibm.ws.jaxrs20.server.JaxRsWebEndpointImpl.init(JaxRsWebEndpointImpl.java:66)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.init(IBMRestServlet.java:64)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:297)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:598)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:440)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1138)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4962)
+	... 17 more
+
+[12/21/17 15:16:14:602 COT] 0000000d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: The server defaultServer is stopping because the JVM is exiting.
+[12/21/17 15:16:14:645 COT] 00000045 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[12/21/17 15:16:14:673 COT] 00000046 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host *  (IPv6) port 9080.
+[12/21/17 15:16:14:675 COT] 00000046 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.17:9080/Cycle/
+[12/21/17 15:16:14:681 COT] 00000045 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[12/21/17 15:16:15:676 COT] 00000022 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application Cycle has stopped successfully.
+[12/21/17 15:16:15:862 COT] 00000045 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[12/21/17 15:16:16:063 COT] 00000045 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[12/21/17 15:16:18:411 COT] 0000000e com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Thursday, December 21, 2017 at 3:16 PM. The server defaultServer is shutting down.
+[12/21/17 15:16:20:049 COT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 5 minutes, 29.184 seconds.

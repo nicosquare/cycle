@@ -1,0 +1,35 @@
+------Start of DE processing------ = [12/21/17 15:14:15:960 COT]
+Exception = javax.servlet.ServletException
+Source = com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters
+probeid = 1064
+Stack Dump = javax.servlet.ServletException: Resource class wasdev.sample.rest.VisitorAPI can not be instantiated due to InvocationTargetException
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.createSingletonInstance(LibertyJaxRsServerFactoryBean.java:224)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.onApplicationInit(LibertyJaxRsServerFactoryBean.java:144)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.doInit(LibertyJaxRsServerFactoryBean.java:263)
+	at com.ibm.ws.jaxrs20.server.JaxRsWebEndpointImpl.init(JaxRsWebEndpointImpl.java:66)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.init(IBMRestServlet.java:64)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:297)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:598)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:440)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1138)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4962)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:995)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:957)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:357)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:316)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:499)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:433)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:313)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:501)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:571)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:926)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1015)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Dump of callerThis
+null
