@@ -1,2 +1,5 @@
-# wat_gov_hack
-Rerpository for demo in Gov World Hackathon
+# Cycle project Main App
+
+Using Java Liberty as framework, we connect all the services with this web app.
+
+##
