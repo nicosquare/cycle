@@ -1,0 +1,27 @@
+{
+  "name": "cycle",
+  "version": "1.0.0",
+  "description": "Cycle project for World Gov Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicosquare/cycle/tree/master/ethereum/cycle"
+  },
+  "keywords": [
+    "govworld",
+    "hack",
+    "cycle",
+    "energy",
+    "access",
+    "africa",
+    "colombia"
+  ],
+  "author": "Nicolas Cuadrado",
+  "license": "ISC",
+  "dependencies": {
+    "uport-connect": "^0.7.0"
+  }
+}
