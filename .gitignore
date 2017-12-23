@@ -6,3 +6,4 @@ target/*
 .factorypath
 .project
 /target/
+app/node_modules
