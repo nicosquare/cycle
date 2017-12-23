@@ -1,0 +1,69 @@
+{
+  "contractName": "SampleRecipientThrow",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820551ea4f15565b4ef759a9be78bd62d3a2bc7ab6442f51c52311bae316f60586c0029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820551ea4f15565b4ef759a9be78bd62d3a2bc7ab6442f51c52311bae316f60586c0029",
+  "sourceMap": "220:33:4:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "220:33:4:-;;;;;",
+  "source": "/*\nThis is an example contract that helps test the functionality of the approveAndCall() functionality of HumanStandardToken.sol.\nThis one will throw and thus needs to propagate the error up.\n*/\npragma solidity ^0.4.8;\n\ncontract SampleRecipientThrow {\n}\n",
+  "sourcePath": "/home/madog/Documents/proyectos/CYCLE/cycle/ethereum/references/Tokens/contracts/SampleRecipientThrow.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/madog/Documents/proyectos/CYCLE/cycle/ethereum/references/Tokens/contracts/SampleRecipientThrow.sol",
+      "exportedSymbols": {
+        "SampleRecipientThrow": [
+          351
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".8"
+          ]
+        },
+        "id": 350,
+        "name": "PragmaDirective",
+        "src": "195:23:4"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            351
+          ],
+          "name": "SampleRecipientThrow",
+          "nodes": [
+            null
+          ],
+          "scope": 352
+        },
+        "id": 351,
+        "name": "ContractDefinition",
+        "src": "220:33:4"
+      }
+    ],
+    "id": 352,
+    "name": "SourceUnit",
+    "src": "195:59:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-22T04:18:36.910Z"
+}

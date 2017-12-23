@@ -2,6 +2,4 @@
 applications:
  - name: Cycle
    random-route: true
-   path: target/Cycle.war
    memory: 256M
-   instances: 1
