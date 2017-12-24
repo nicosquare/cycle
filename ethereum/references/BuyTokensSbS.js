@@ -37,10 +37,10 @@ undefined
 
 // Check the amount of CLE tokens for account1 again. It should have some now.
 
-> cycleCoinInstance.balanceOf(account1).then(balance => account1GusTokenBalance = balance.toString(10))
+> cycleCoinInstance.balanceOf(account1).then(balance => account1CycleTokenBalance = balance.toString(10))
 '5000000000000000000000'
 
 // When we created our token we made it with 18 decimals, which the same as what ether has. That's a lot of zeros, let's display without the decimals:
 
-> web3.fromWei(account1GusTokenBalance, "ether")
+> web3.fromWei(account1CycleTokenBalance, "ether")
 '5000'
