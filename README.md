@@ -1,6 +1,17 @@
 # Cycle
 Repository for demo in Gov World Hackathon.
 
+## To install locally
+
+`git clone https://github.com/nicosquare/cycle.git `
+
+Main app is in folder 'app':
+
+`cd cycle/app `
+
+`npm install `
+
+
 ## Context
 
 Places with no access to energy are mostly concentrated in the sub-saharan Africa, in places where installation of infrastructure is challenge due to climatic, geographic and cost  constraints. Mini-grids seems to be a very good alternative  because they offer independent and decentralized options that doesn’t need to be interconnected with the normal electric grids.
