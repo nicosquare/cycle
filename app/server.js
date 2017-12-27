@@ -109,3 +109,11 @@ var port = process.env.PORT || 3000
 app.listen(port, function() {
     console.log("To view your app, open this link in your browser: http://localhost:" + port);
 });
+ if (process.env.VCAP_SERVICES) {
+    console.log("yaho")
+	 var env = JSON.parse(process.env.VCAP_SERVICES);
+        var credentials = env['pm-20'][0].credentials;
+        var username = credentials.username;
+        var password = credentials.password;
+        var instance_id = credentials.instance_id;
+    }
