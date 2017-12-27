@@ -75,13 +75,36 @@ First: Query the token for ML service
 
 $ curl --basic --user 0457b6fb-93c8-4049-81c3-807dc0d78368:914cc844-01dd-4274-a0cd-85b1e900d168 https://ibm-watson-ml.mybluemix.net/v3/identity/token
 
-eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjE0NjU4MGUyLWExMTUtNGJlMy05YjE0LTAyNTc1NzcyNWI3NiIsImluc3RhbmNlSWQiOiIxNDY1ODBlMi1hMTE1LTRiZTMtOWIxNC0wMjU3NTc3MjViNzYiLCJwbGFuSWQiOiIzZjZhY2Y0My1lZGU4LTQxM2EtYWM2OS1mOGFmM2JiMGNiZmUiLCJyZWdpb24iOiJ1cy1zb3V0aCIsInVzZXJJZCI6IjA0NTdiNmZiLTkzYzgtNDA0OS04MWMzLTgwN2RjMGQ3ODM2OCIsImlzcyI6Imh0dHBzOi8vaWJtLXdhdHNvbi1tbC5teWJsdWVtaXgubmV0L3YzL2lkZW50aXR5IiwiaWF0IjoxNTE0MDk5NjU4LCJleHAiOjE1MTQxMjg0NTh9.Wh7K_HXX1t07fINJZs6x2gM5MukVM1mudoWVb7ubZSfz3qytBEKRm8NhzTMdlV3lDgZdILzU7L59zRR_EM1KbW6N8rodAhUo_2UspMRYd0kyRZUzwp8yKE1ICPmCZKj2Y2E-TLYIn3h7CsJFRakPCaLGy0W336Xz1qTT0XHL-ca144b7TNhBtBRYSKpyp8jVyZrdhvvx7t3bGuUe6u7nP5vvm5-YEQChho-0eu5WLOTuIxjm7xtUjf27MsCg2kn5DUR0kW8303CqCQyTG51IoMWAVxvKfaf-NhK86GLL3eh-LAtQd542COYdyHbQQhXtEChkrEiORNXEsMsvUzKGYQ
+eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjE0NjU4MGUyLWExMTUtNGJlMy05YjE0LTAyNTc1NzcyNWI3NiIsImluc3RhbmNlSWQiOiIxNDY1ODBlMi1hMTE1LTRiZTMtOWIxNC0wMjU3NTc3MjViNzYiLCJwbGFuSWQiOiIzZjZhY2Y0My1lZGU4LTQxM2EtYWM2OS1mOGFmM2JiMGNiZmUiLCJyZWdpb24iOiJ1cy1zb3V0aCIsInVzZXJJZCI6IjA0NTdiNmZiLTkzYzgtNDA0OS04MWMzLTgwN2RjMGQ3ODM2OCIsImlzcyI6Imh0dHBzOi8vaWJtLXdhdHNvbi1tbC5teWJsdWVtaXgubmV0L3YzL2lkZW50aXR5IiwiaWF0IjoxNTE0Mjk2NzI2LCJleHAiOjE1MTQzMjU1MjZ9.pvkz89g7m3_5VrwMfmkQ6N8GZp3lQt1Q4R-BkYq90Xoh-K3FJQs50CxXDx37ZqxoQojlJ1HU9N92O8rUBjZFkgXL0GjH0RUMx2GNddnin8lnBjbAI42Vqxyij9BVyZqPKnRMPIyIzzXEvDMtKopod9csXxzS3ELiQtF0RcM9PfAbu0ZoAty6OB8_8FgPEkQA5ZIoYcRz3iGD1e9rPJ8p6w9e7aiQEP5w48dk421tjIp8_7LMPf4f-wLuVLOHq3C-A9H5Cgd1Kk7NJoKeN9YSLIc8r2tfAKLykMsgk7TPLJN1PSUfj9mn2ynWX1LttvHOxMk6qaHYvWcfbnYBt9oy0w
 
 Second: Use the token for query the ML model
 
-curl -X POST 
---header 'Content-Type: application/json' 
---header 'Accept: application/json' 
---header 'Authorization: Bearer eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjE0NjU4MGUyLWExMTUtNGJlMy05YjE0LTAyNTc1NzcyNWI3NiIsImluc3RhbmNlSWQiOiIxNDY1ODBlMi1hMTE1LTRiZTMtOWIxNC0wMjU3NTc3MjViNzYiLCJwbGFuSWQiOiIzZjZhY2Y0My1lZGU4LTQxM2EtYWM2OS1mOGFmM2JiMGNiZmUiLCJyZWdpb24iOiJ1cy1zb3V0aCIsInVzZXJJZCI6IjA0NTdiNmZiLTkzYzgtNDA0OS04MWMzLTgwN2RjMGQ3ODM2OCIsImlzcyI6Imh0dHBzOi8vaWJtLXdhdHNvbi1tbC5teWJsdWVtaXgubmV0L3YzL2lkZW50aXR5IiwiaWF0IjoxNTE0MDk5NjU4LCJleHAiOjE1MTQxMjg0NTh9.Wh7K_HXX1t07fINJZs6x2gM5MukVM1mudoWVb7ubZSfz3qytBEKRm8NhzTMdlV3lDgZdILzU7L59zRR_EM1KbW6N8rodAhUo_2UspMRYd0kyRZUzwp8yKE1ICPmCZKj2Y2E-TLYIn3h7CsJFRakPCaLGy0W336Xz1qTT0XHL-ca144b7TNhBtBRYSKpyp8jVyZrdhvvx7t3bGuUe6u7nP5vvm5-YEQChho-0eu5WLOTuIxjm7xtUjf27MsCg2kn5DUR0kW8303CqCQyTG51IoMWAVxvKfaf-NhK86GLL3eh-LAtQd542COYdyHbQQhXtEChkrEiORNXEsMsvUzKGYQ' 
--d '{"fields": ["Time","Sub_metering_1","Sub_metering_2","Sub_metering_3", "Charge"],"values": [[180400,0,37,16,6.6666667],[183500,0,27,17,3.333333333]]}' 'https://ibm-watson-ml.mybluemix.net/v3/wml_instances/eccb216b-505a-4c13-8ab0-8ea9b43ae167/published_models/709cd1bd-227e-4df4-9104-af1555fc7695/deployments/ccfbc053-d54a-4596-890e-1cc377f0309e/online'
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjE0NjU4MGUyLWExMTUtNGJlMy05YjE0LTAyNTc1NzcyNWI3NiIsImluc3RhbmNlSWQiOiIxNDY1ODBlMi1hMTE1LTRiZTMtOWIxNC0wMjU3NTc3MjViNzYiLCJwbGFuSWQiOiIzZjZhY2Y0My1lZGU4LTQxM2EtYWM2OS1mOGFmM2JiMGNiZmUiLCJyZWdpb24iOiJ1cy1zb3V0aCIsInVzZXJJZCI6IjA0NTdiNmZiLTkzYzgtNDA0OS04MWMzLTgwN2RjMGQ3ODM2OCIsImlzcyI6Imh0dHBzOi8vaWJtLXdhdHNvbi1tbC5teWJsdWVtaXgubmV0L3YzL2lkZW50aXR5IiwiaWF0IjoxNTE0Mjk2NzI2LCJleHAiOjE1MTQzMjU1MjZ9.pvkz89g7m3_5VrwMfmkQ6N8GZp3lQt1Q4R-BkYq90Xoh-K3FJQs50CxXDx37ZqxoQojlJ1HU9N92O8rUBjZFkgXL0GjH0RUMx2GNddnin8lnBjbAI42Vqxyij9BVyZqPKnRMPIyIzzXEvDMtKopod9csXxzS3ELiQtF0RcM9PfAbu0ZoAty6OB8_8FgPEkQA5ZIoYcRz3iGD1e9rPJ8p6w9e7aiQEP5w48dk421tjIp8_7LMPf4f-wLuVLOHq3C-A9H5Cgd1Kk7NJoKeN9YSLIc8r2tfAKLykMsgk7TPLJN1PSUfj9mn2ynWX1LttvHOxMk6qaHYvWcfbnYBt9oy0w' -d '{"fields": ["Global_active_power","Global_reactive_power","Voltage","Global_intensity","Sub_metering_1","Sub_metering_2","Sub_metering_3"],
+"values": [[4.216,0.418,234.84,18.4,0,1,17],[4.216,0.418,234.84,18.4,0,1,17]]}' 'https://ibm-watson-ml.mybluemix.net/v3/wml_instances/146580e2-a115-4be3-9b14-025757725b76/published_models/3f73ee01-ea89-437e-b99d-d5763f9a9fbe/deployments/b76b2426-643b-4001-8574-84038d9845eb/online'
+
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjE0NjU4MGUyLWExMTUtNGJlMy05YjE0LTAyNTc1NzcyNWI3NiIsImluc3RhbmNlSWQiOiIxNDY1ODBlMi1hMTE1LTRiZTMtOWIxNC0wMjU3NTc3MjViNzYiLCJwbGFuSWQiOiIzZjZhY2Y0My1lZGU4LTQxM2EtYWM2OS1mOGFmM2JiMGNiZmUiLCJyZWdpb24iOiJ1cy1zb3V0aCIsInVzZXJJZCI6IjA0NTdiNmZiLTkzYzgtNDA0OS04MWMzLTgwN2RjMGQ3ODM2OCIsImlzcyI6Imh0dHBzOi8vaWJtLXdhdHNvbi1tbC5teWJsdWVtaXgubmV0L3YzL2lkZW50aXR5IiwiaWF0IjoxNTE0Mjk2NzI2LCJleHAiOjE1MTQzMjU1MjZ9.pvkz89g7m3_5VrwMfmkQ6N8GZp3lQt1Q4R-BkYq90Xoh-K3FJQs50CxXDx37ZqxoQojlJ1HU9N92O8rUBjZFkgXL0GjH0RUMx2GNddnin8lnBjbAI42Vqxyij9BVyZqPKnRMPIyIzzXEvDMtKopod9csXxzS3ELiQtF0RcM9PfAbu0ZoAty6OB8_8FgPEkQA5ZIoYcRz3iGD1e9rPJ8p6w9e7aiQEP5w48dk421tjIp8_7LMPf4f-wLuVLOHq3C-A9H5Cgd1Kk7NJoKeN9YSLIc8r2tfAKLykMsgk7TPLJN1PSUfj9mn2ynWX1LttvHOxMk6qaHYvWcfbnYBt9oy0w' -d '{"fields":["Global_active_power","Global_reactive_power","Voltage","Global_intensity","Sub_metering_1","Sub_metering_2","Sub_metering_3"],"values": [[4.216,0.418,234.84,18.4,0,1,17]]}' 'https://ibm-watson-ml.mybluemix.net/v3/wml_instances/146580e2-a115-4be3-9b14-025757725b76/published_models/3f73ee01-ea89-437e-b99d-d5763f9a9fbe/deployments/b76b2426-643b-4001-8574-84038d9845eb/online'
+
+// Instance id
+146580e2-a115-4be3-9b14-025757725b76
+
+// Deployment id
+b76b2426-643b-4001-8574-84038d9845eb
+
+// Published model id 
+3f73ee01-ea89-437e-b99d-d5763f9a9fbe
+
+// NVM Use
+
+Usage:
+nvm install <version>       Download and install a <version>
+nvm use <version>           Modify PATH to use <version>
+nvm ls                      List versions (installed versions are blue)
+
+//
+
+Generate API Key
+API Key a-z8ktyj-je59zzerwt
+Authentication Token !24D2UjHJIsiThS9l4
+
+
 
