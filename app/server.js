@@ -4,7 +4,8 @@ var cfenv = require("cfenv");
 var bodyParser = require('body-parser')
 // For better efficient design
 var extras = require('./extras.js')
-
+var async = require("async");
+var request = require("request");
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -80,6 +81,43 @@ console.log(names)
 })
   });
 
+
+//ML service things setup from here
+
+app.get("/ml",(req,res)=>{
+	var item1 = [request];
+async.each(item1, function (item ,callback) {
+	item({url:extras.urlml},(error,response,body)=>{
+		var json = JSON.parse(body);
+		autho = json.token;
+		callback();
+		console.log("fhjf")
+	})
+}
+	,function(){
+		request({
+		url : 'https://ibm-watson-ml.mybluemix.net/v3/wml_instances/146580e2-a115-4be3-9b14-025757725b76/published_models/3f73ee01-ea89-437e-b99d-d5763f9a9fbe/deployments/b76b2426-643b-4001-8574-84038d9845eb/online',
+		method : 'POST',
+		auth : {
+			'bearer' : autho
+		
+		},
+			headers : {
+				'content-type': 'application/json',
+				'Accept': 'application/json'
+			},
+			json :{
+				"fields" :["Global_active_power","Global_reactive_power","Voltage","Global_intensity","Sub_metering_1","Sub_metering_2","Sub_metering_3"] , "values" :[ [4.216,0.418,234.18,18.4,0,1,17]]
+			}
+			}
+,(error,response,body)=>{
+		console.log(response.body.values)
+		var ans = response.body.values[0][6]
+		console.log(ans)	
+})
+	
+})
+});
 
 
 // load local VCAP configuration  and service credentials
