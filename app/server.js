@@ -2,6 +2,8 @@ var express = require("express");
 var app = express();
 var cfenv = require("cfenv");
 var bodyParser = require('body-parser')
+// For better efficient design
+var extras = require('./extras.js')
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -9,14 +11,32 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-var mydb;
+// Setting the cloudant service newly
+var Cloudant = require('cloudant');
+var me = extras.username;
+var password = extras.password;
+var cloudant = Cloudant({account:me, password:password});
 
+database = cloudant.db.use('mydb');
+database.find({selector:{}},(error,result)=>{
+	if(!error)
+	{
+		console.log(result.docs)
+	for(var i = 0 ; i < result.docs.length ; i++){
+		console.log(result.docs[i]._id)
+	}
+}
+else{
+	console.log(error)
+}
+})
 /* Endpoint to greet and add a new visitor to database.
 * Send a POST request to localhost:3000/api/visitors with body
 * {
 * 	"name": "Bob"
 * }
 */
+
 app.post("/api/visitors", function (request, response) {
   var userName = request.body.name;
   if(!mydb) {
@@ -25,12 +45,13 @@ app.post("/api/visitors", function (request, response) {
     return;
   }
   // insert the username as a document
-  mydb.insert({ "name" : userName }, function(err, body, header) {
-    if (err) {
-      return console.log('[mydb.insert] ', err.message);
-    }
-    response.send("Hello " + userName + "! I added you to the database.");
-  });
+    
+	database.insert({"name" : userName} , (err,result)=>{
+		if(err){
+			return console.log(err)
+		}
+		response.send("hello")
+	})
 });
 
 /**
@@ -46,21 +67,19 @@ app.post("/api/visitors", function (request, response) {
  */
 app.get("/api/visitors", function (request, response) {
   var names = [];
-  if(!mydb) {
-    response.json(names);
-    return;
-  }
-
-  mydb.list({ include_docs: true }, function(err, body) {
+	if(!database){
+		response.send(names)
+	}
+	database.find({ selector:{} }, function(err, result) {
     if (!err) {
-      body.rows.forEach(function(row) {
-        if(row.doc.name)
-          names.push(row.doc.name);
-      });
+          console.log(result.docs[0].name)
+		names.push(result.docs[0].name)
+      }
+console.log(names) 
       response.json(names);
-    }
+})
   });
-});
+
 
 
 // load local VCAP configuration  and service credentials
@@ -109,11 +128,4 @@ var port = process.env.PORT || 3000
 app.listen(port, function() {
     console.log("To view your app, open this link in your browser: http://localhost:" + port);
 });
- if (process.env.VCAP_SERVICES) {
-    console.log("yaho")
-	 var env = JSON.parse(process.env.VCAP_SERVICES);
-        var credentials = env['pm-20'][0].credentials;
-        var username = credentials.username;
-        var password = credentials.password;
-        var instance_id = credentials.instance_id;
-    }
+   
