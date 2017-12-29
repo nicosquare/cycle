@@ -115,7 +115,6 @@ ul li {
 .tiles .content {
   background-image: url('../img/1907.jpg');
   display: block;
-  color:white;
   max-width: 30em;
   margin:auto;
   height:300px;
@@ -136,6 +135,7 @@ ul li {
 
 .content-top i {
   font-size: 50px;
+  color:white;
 }
 
 .content-top h1 {
@@ -144,6 +144,7 @@ ul li {
   margin-top:1.4em;
   /* font-weight: 800; */
   letter-spacing: 1px;
+  color:white;
 }
 
 .content-bottom {
@@ -151,7 +152,11 @@ ul li {
 }
 
 .content-bottom h3 {
-  font-size: 13px;
+  font-size:1.1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:500;
+  color:#f2f2f2;
+  line-height: 1.6em;
 }
 
 /* END OF FEATURES BODY */
