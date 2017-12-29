@@ -103,7 +103,9 @@ ul li {
 /* END OF PARTICLE STYLING */
 
 /* START OF FEATURES BODY */
-
+.main{
+  min-height: 90vh;
+}
 .tiles {
   padding: 1em;
 }
@@ -159,4 +161,99 @@ ul li {
   line-height: 1.6em;
 }
 
+.tile{
+  margin-top: 2.4em;
+  /* border: 2px solid red; */
+}
 /* END OF FEATURES BODY */
+
+/* TAGLINE BOX */
+.tagline{
+  margin-top:2em;
+  text-align: center;
+}
+
+.tagline h1{
+  font-size:28px;
+  font-weight:600;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color:#9497B8;
+}
+
+.tagline i{
+  color:#360099;
+  font-size:4em;
+  margin: 20px;
+}
+
+/* PRE-FOOT */
+.prefoot{
+  margin-top: 3em;
+  background: linear-gradient(to right, #15B1E6, #6964FF);
+  min-height:60vh;
+}
+.sample-img{
+  margin-top:4em;
+  background-color: white;
+  padding-top:2em;
+  padding-bottom:2em;
+}
+.sample-content{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: left;
+  margin-top:10%;
+  font-weight: lighter;
+  color:white;
+}
+
+.sample-content h1{
+  font-size: 1.5em;
+}
+.sample-content i {
+ font-size:6em;
+}
+
+/* END OF PREFOOT */
+
+/* DETAILS */
+.details{
+  min-height:50vh;
+}
+.page-header{
+  border:none;
+  text-align: center;
+}
+.page-header h1{
+  font-family: 'Open Sans', sans-serif;
+  color:#6964FF;
+  font-size: 3em;
+  text-shadow: 2px 3px 4px #f2f2f2;
+}
+.page-header i, .page-content i{
+  font-size:4em;
+  color:#6964FF;
+}
+.page-content h3{
+  color:grey;
+  font-weight:bold;
+  font-size:1.3em;
+  line-height:1.6em;
+  font-family: 'Open Sans', sans-serif;
+}
+.page-content{
+  margin:2em;
+  text-align: center;
+}
+
+/* END OF DETAILS */
+
+
+/* FOOTER */
+.footer{
+  margin-top: 3em;
+  text-align: center;
+  min-height: 20vh;
+  border-top:2px solid #f2f2f2;
+  padding:2em;
+}
