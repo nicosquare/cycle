@@ -54,13 +54,13 @@ body {
   color: white;
 }
 
-h1 {
+#overlay h1 {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
-h2 {
+#overlay h2 {
   font-size: 38px;
   font-weight: 700;
 }
@@ -200,15 +200,20 @@ ul li {
   padding-bottom:2em;
 }
 .sample-content{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
   margin-top:10%;
-  font-weight: lighter;
+  font-weight: 500;
   color:white;
 }
 
 .sample-content h1{
-  font-size: 1.5em;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+
+  letter-spacing: 2px;
+  /* font-size: 1.5em; */
 }
 .sample-content i {
  font-size:6em;
