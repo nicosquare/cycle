@@ -1,100 +1,103 @@
 /* Google fonts for styling */
+
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Open+Sans:300,400');
 /*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
 
-
-/* PARTICLES STYLING */
-body{
+body {
   overflow-x: hidden;
 }
 
-canvas {
+/* PARTICLES AND LANDING STYLING */
+
+#particles-js canvas {
   display: block;
   vertical-align: bottom;
-  background:#6C00FF;
-
+  background: #6C00FF;
 }
 
 #particles-js {
-  position: absolute;
   width: 100%;
   height: 100%;
-  background:#6C00FF;
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index:0;
+  background: #6C00FF;
+  top: 0;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 
 #overlay {
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
-  top: 90px;
-  color:white;
-  padding:2em;
+  top: 70px;
+  color: white;
+  padding: 2em;
   text-align: left;
 }
-#overlay p{
+
+#overlay p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2em;
-  color:#DABFFF;
-  margin-top:1em;
+  color: #DABFFF;
+  margin-top: 1em;
 }
 
-#overlay span{
-  color:white;
+#overlay span {
+  color: white;
 }
 
-h1{
+h1 {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 2px;
 }
-h2{
+
+h2 {
   font-size: 38px;
   font-weight: 700;
 }
 
-ul li{
+ul li {
   margin: 10px;
   list-style-type: none;
   float: left;
 }
 
-.btn-primary{
-  background-color:	 #360099;
+.btn-primary {
+  background-color: #360099;
   letter-spacing: 2px;
   font-family: 'Open Sans', serif;
   border-radius: 0.3em;
   transition: .4s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: #270071;
   transition: .4s;
 }
 
-.btn-default{
-  color:#360099;
+.btn-default {
+  color: #360099;
 }
 
-.btn-default:hover{
+.btn-default:hover {
   background-color: white;
   transition: .3s;
   color: #270071;
 }
 
-.btn-primary, .btn-default{
-  padding:15px;
+.btn-primary, .btn-default {
+  padding: 15px;
   font-size: 15px;
   font-weight: 700;
 }
 
-
-
 /* END OF PARTICLE STYLING */
+
+.main {
+  margin-top: 20%;
+}
