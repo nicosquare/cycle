@@ -29,7 +29,9 @@ body {
   left: 0;
   z-index: 0;
 }
-
+.landing{
+  margin-bottom: 12em;
+}
 #overlay {
   font-family: 'Open Sans', sans-serif;
   position: relative;
@@ -97,7 +99,3 @@ ul li {
 }
 
 /* END OF PARTICLE STYLING */
-
-.main {
-  margin-top: 20%;
-}

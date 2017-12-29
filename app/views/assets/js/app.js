@@ -8,7 +8,7 @@ particlesJS("particles-js",{
         "value_area": 800
       }
     },
-    "color": { 
+    "color": {
       "value": "#ffffff"
     },
     "shape": {
@@ -31,7 +31,7 @@ particlesJS("particles-js",{
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 2,
+        "speed": 6,
         "opacity_min": 0,
         "sync": false
       }
@@ -41,7 +41,7 @@ particlesJS("particles-js",{
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 4,
+        "speed": 1,
         "size_min": 0.3,
         "sync": false
       }
