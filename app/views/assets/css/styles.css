@@ -1,6 +1,6 @@
 /* Google fonts for styling */
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Archivo+Black|Passion+One|Signika|Lato|Open+Sans:300,400');
 /*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Lato', sans-serif;
@@ -23,15 +23,17 @@ body {
   height: 100%;
   background: #6C00FF;
   top: 0;
-  position:absolute;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 0;
 }
-.landing{
+
+.landing {
   margin-bottom: 12em;
 }
+
 #overlay {
   font-family: 'Open Sans', sans-serif;
   position: relative;
@@ -99,3 +101,57 @@ ul li {
 }
 
 /* END OF PARTICLE STYLING */
+
+/* START OF FEATURES BODY */
+
+.tiles {
+  padding: 1em;
+}
+
+.tiles #box2{
+  background-image: url('../img/1511.jpg');
+}
+
+.tiles .content {
+  background-image: url('../img/1907.jpg');
+  display: block;
+  color:white;
+  max-width: 30em;
+  margin:auto;
+  height:300px;
+  transition: .3s;
+  box-shadow: 0px 6px 3px #f2f2f2;
+  border-radius: 1.5em;
+  padding: 3em;
+  /* background: linear-gradient(to right, #80AAFF, #6964FF); */
+}
+.tiles .content:hover{
+  box-shadow: 3px 6px 3px #f2f2f2;
+  transition: .3s;
+}
+
+.tiles .content .content-top {
+  text-align: left;
+}
+
+.content-top i {
+  font-size: 50px;
+}
+
+.content-top h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6em;
+  margin-top:1.4em;
+  /* font-weight: 800; */
+  letter-spacing: 1px;
+}
+
+.content-bottom {
+  text-align: left;
+}
+
+.content-bottom h3 {
+  font-size: 13px;
+}
+
+/* END OF FEATURES BODY */
