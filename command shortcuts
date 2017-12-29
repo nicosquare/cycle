@@ -106,5 +106,15 @@ Generate API Key
 API Key a-z8ktyj-je59zzerwt
 Authentication Token !24D2UjHJIsiThS9l4
 
+// Node RED
+
+user: cycle-admin
+pass: JH9011
+
+// Multi NodeRED
+
+"apiKey": "a-xrt0ai-ampokakg6d",
+"apiToken": "CuXvUy&Fds8-z_i)qu"
+
 
 
