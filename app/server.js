@@ -1,22 +1,22 @@
+var fs = require('fs')
 var express = require("express");
 var app = express();
 var cfenv = require("cfenv");
 var bodyParser = require('body-parser');
+var server = require('http').Server(app);
+var io = require('socket.io')(server)
 // For better efficient design
-<<<<<<< HEAD
 var http = require('http')
 var extras = require('./extras.js')
-=======
 var extras = require('./extras.js');
->>>>>>> ed9e93bcc4bb1362884821003af77311c2edc75c
 var async = require("async");
 var request = require("request");
 //JQuery
-var jsdom = require('jsdom');
-const { JSDOM } = jsdom;
-const { document } = (new JSDOM('')).window;
-global.document = document;
-var $ = require("jquery")((new JSDOM('')).window);
+//var jsdom = require('jsdom');
+//const { JSDOM } = jsdom;
+//const { document } = (new JSDOM('')).window;
+//global.document = document;
+//var $ = require("jquery")((new JSDOM('')).window);
 
 // Uport imports
 
@@ -28,81 +28,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 var ml_controller = require('./controller/ml.js')
 // parse application/json
 app.use(bodyParser.json())
-
-// Setting the cloudant service newly
-var Cloudant = require('cloudant');
-var me = extras.username;
-var password = extras.password;
-var cloudant = Cloudant({account:me, password:password});
-
-database = cloudant.db.use('household_power_consumption');
-database.find({selector:{}},(error,result)=>{
-	if(!error)
-	{
-		var items =[];
-		var length = result.docs.length;
-//		console.log(length);
-		var ans = result.docs[length-1].d;
-		for (item in ans)		
-		{
-//			console.log(ans[item])
-			items.push(ans[item])
-		}
-//		console.log(items)
-	}
-	else{
-//		console.log(error)
-	}
-})
-/* Endpoint to greet and add a new visitor to database.
- * Send a POST request to localhost:3000/api/visitors with body
-kkkjjkjj * {
- * 	"name": "Bob"
- * }
- */
-
-app.post("/api/visitors", function (request, response) {
-	var userName = request.body.name;
-	if(!mydb) {
-		console.log("No database.");
-		response.send("Hello " + userName + "!");
-		return;
-	}
-	// insert the username as a document
-
-	database.insert({"name" : userName} , (err,result)=>{
-		if(err){
-			return console.log(err)
-		}
-		response.send("hello")
-	})
-});
-
-/**
- * Endpoint to get a JSON array of all the visitors in the database
- * REST API example:
- * <code>
- * GET http://localhost:3000/api/visitors
- * </code>
- *
- * Response:
- * [ "Bob", "Jane" ]
- * @return An array of all the visitor names
- */
-app.get("/api/visitors", function (request, response) {
-	var names = [];
-	if(!database){
-		response.send(names)
-	}
-	database.find({ selector:{} }, function(err, result) {
-		if (!err) {
-			console.log(result.docs[0].name)
-			names.push(result.docs[0].name)
-		}
-		console.log(names) 
-		response.json(names);
-	})
-});
 
 
 // UPort code from here
@@ -185,13 +110,12 @@ if (appEnv.services['cloudantNoSQLDB'] || appEnv.getService(/cloudant/)) {
 
 //serve static file (index.html, images, css)
 app.use(express.static(__dirname + '/views'));
-
-
-
-
+io.sockets.on('connection',function(socket){
+	io.emit("message","You are connected");
+})
 
 var port = process.env.PORT || 3000
-app.listen(port, function() {
+	server.listen(port, function() {
 	console.log("To view your app, open this link in your browser: http://localhost:" + port);
 });
 

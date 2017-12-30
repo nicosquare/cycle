@@ -24,7 +24,7 @@
     "express": "^4.15.x",
     "global": "^4.3.2",
     "jquery": "^3.2.1",
-    "jsdom": "^11.5.1",
+    "jsdom": "^10.*",
     "nodemon": "^1.14.3",
     "socket.io": "^2.0.4",
     "uport-connect": "^0.7.0",
