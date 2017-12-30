@@ -3,6 +3,7 @@ var app = express();
 var cfenv = require("cfenv");
 var bodyParser = require('body-parser')
 // For better efficient design
+var http = require('http')
 var extras = require('./extras.js')
 var async = require("async");
 var request = require("request");
@@ -136,6 +137,8 @@ if (appEnv.services['cloudantNoSQLDB'] || appEnv.getService(/cloudant/)) {
 
 //serve static file (index.html, images, css)
 app.use(express.static(__dirname + '/views'));
+
+
 
 
 

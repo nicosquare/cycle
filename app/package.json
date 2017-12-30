@@ -24,6 +24,8 @@
     "express": "^4.15.x",
     "global": "^4.3.2",
     "nodemon": "^1.14.3",
+    "socket.io": "^2.0.4",
+    "uport-connect": "^0.7.0",
     "web3": "^1.0.0-beta.27",
     "zeppelin-solidity": "^1.4.0"
   },
