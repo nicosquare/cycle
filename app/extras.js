@@ -7,7 +7,11 @@ var passwordml = "914cc844-01dd-4274-a0cd-85b1e900d168"
 var urlml = 'https://' + usernameml + ':' + passwordml + '@ibm-watson-ml.mybluemix.net/v3/identity/token';
 
 // ML service details for the token bearer use
-var urltoken = ""
+var urltoken = 'https://ibm-watson-ml.mybluemix.net/v3/wml_instances/146580e2-a115-4be3-9b14-025757725b76/published_models/3f73ee01-ea89-437e-b99d-d5763f9a9fbe/deployments/b76b2426-643b-4001-8574-84038d9845eb/online'
+var headers = {
+					'content-type': 'application/json',
+					'Accept': 'application/json'
+				}
 
 module.exports={
 	password,
@@ -15,5 +19,5 @@ module.exports={
 	usernameml,
 	passwordml,
 	urlml,
-
+	urltoken 
 }
