@@ -1,12 +1,28 @@
 var express = require("express");
 var app = express();
 var cfenv = require("cfenv");
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 // For better efficient design
+<<<<<<< HEAD
 var http = require('http')
 var extras = require('./extras.js')
+=======
+var extras = require('./extras.js');
+>>>>>>> ed9e93bcc4bb1362884821003af77311c2edc75c
 var async = require("async");
 var request = require("request");
+//JQuery
+var jsdom = require('jsdom');
+const { JSDOM } = jsdom;
+const { document } = (new JSDOM('')).window;
+global.document = document;
+var $ = require("jquery")((new JSDOM('')).window);
+
+// Uport imports
+
+const Connect = require("uport-connect").Connect;
+const SimpleSigner = require("uport-connect").SimpleSigner;
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 var ml_controller = require('./controller/ml.js')
@@ -86,6 +102,38 @@ app.get("/api/visitors", function (request, response) {
 		console.log(names) 
 		response.json(names);
 	})
+});
+
+
+// UPort code from here
+
+app.post('/authenticate', function (req, res) {
+    
+ 	const uport = new Connect('Cycle', {
+      clientId: '2ojxCynUCy1VWqWJNJSVFAoRRyCPZDkSPw1',
+      network: ' http://localhost:9545/',
+      signer: SimpleSigner('e42efa79fadf96bfb9e9c4b0f75ea010640f55adcdc3cbdfa13638fe361d923d')
+    })
+
+    // Request credentials to login
+    uport.requestCredentials({
+      requested: ['name', 'phone', 'country'],
+      notifications: true // We want this if we want to recieve credentials
+    })
+    .then((credentials) => {
+      // Do something
+    })
+
+    // Attest specific credentials
+    uport.attestCredentials({
+      sub: THE_RECEIVING_UPORT_ADDRESS,
+      claim: {
+        CREDENTIAL_NAME: CREDENTIAL_VALUE
+      },
+      exp: new Date().getTime() + 30 * 24 * 60 * 60 * 1000, // 30 days from now
+    })
+
+    console.log('works');
 });
 
 

@@ -109,3 +109,9 @@ particlesJS("particles-js",{
   },
   "retina_detect": true
 });
+
+// UPort
+
+$('#uport-test').click(function(){
+    $.post('/authenticate');
+});
