@@ -77,10 +77,10 @@ io.sockets.on('connection',function(socket){
 		if(!d2)
 			d2=1;
 		var ans = d1.toString()
-		ans = ans + "and "+ d2.toString();
+		ans = ans + "and "+ d2.toString()+" ";
 		socket.emit("message1",ans);
 
-	},1000*60)
+	},1000*20)
 })
 
 // load local VCAP configuration  and service credentials
