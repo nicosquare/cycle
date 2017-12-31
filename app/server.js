@@ -67,7 +67,7 @@ var did1 ='b76b2426-643b-4001-8574-84038d9845eb/online' ;
 var did2 = '';
 app.get("/ml",(req,res)=>{
 	ml_controller.ml(did1);
-	//ml_controller.ml(did2);
+	ml_controller.ml(did2);
 });
 
 
@@ -113,7 +113,9 @@ app.use(express.static(__dirname + '/views'));
 io.sockets.on('connection',function(socket){
 	io.emit("message","You are connected");
 })
-
+io.sockets.on('connection',function(socket){
+	io.emit("message","noconnet")
+})
 var port = process.env.PORT || 3000
 	server.listen(port, function() {
 	console.log("To view your app, open this link in your browser: http://localhost:" + port);
