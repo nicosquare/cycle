@@ -80,7 +80,7 @@ io.sockets.on('connection',function(socket){
 		ans = ans + "and "+ d2.toString()+" ";
 		socket.emit("message1",ans);
 
-	},1000*20)
+	},1000*60)
 })
 
 // load local VCAP configuration  and service credentials
