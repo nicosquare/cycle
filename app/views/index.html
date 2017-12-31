@@ -57,7 +57,7 @@
  	<script src="/socket.io/socket.io.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 	<script>
-		var socket = io.connect('https://app-cycle.mybluemix.net/')
+		var socket = io.connect('https://localhost:3000')
 		socket.on("message1",function(message){
 			$("p").text("Energy Flow through Battery and Grid are  "+message+ "Respectively")
 })
@@ -109,7 +109,15 @@
             <h3>The energy management is controlled by machine learning models who manages the switches! Here a real time demo with data from our database.</h3>
           </div>
           <div class="content-bottom">
-            <p id="ml-prediction" style="color: white"></p>
+			  <p id="ml-prediction" style="color: white"><b> Energy flow through battery and grid are 1 and 1 respectively</b></p>
+			 	<script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+		var socket = io.connect('https://localhost:3000')
+		socket.on("message1",function(message){
+			$("p").text("Energy Flow through Battery and Grid are  "+message+ "Respectively")
+})
+	</script>
           </div>
         </div>
       </div>
