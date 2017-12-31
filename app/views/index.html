@@ -190,6 +190,47 @@
 
   </div>
 
+  <div class="container-fluid prefoot">
+    <div class="row">
+
+      <div class="row tagline">
+        <h1 style="color: white">About Grids</h1>
+        <i class="fa question" aria-hidden="true"></i>
+      </div>
+
+      <div class="col-md-6 col-xs-12">
+        <div class="content">
+          <div class="content-top">
+            <i class="fa caret-right" aria-hidden="true"></i>
+            <h1>Join Venture Connection</h1>
+          </div>
+          <div class="content-bottom">
+            <h3>We stablish relations with mini-grid owners/companies on villages that have infraestructure installed.
+
+            They percieve for the use of their infrastructure and encourage to scale services with us growing capacity.
+            </h3>
+          </div>
+          <div class="content-bottom">
+            <p id="ml-prediction" style="color: white"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-12">
+         <div class="content">
+          <div class="content-top">
+            <i class="fa caret-right" aria-hidden="true"></i>
+            <h1>Zero-Sum Connection</h1>
+          </div>
+          <div class="content-bottom">
+            <h3>The energy management is controlled by machine learning models who manages the switches! Here a real time demo with data from our database.</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <div class="container footer">
     <p>All the rights reserved to the brand - Cycle 2017</p>
   </div>
@@ -203,7 +244,7 @@
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
   <script>
 
-    var socket = io.connect('http://localhost:3000')
+    var socket = io.connect('https://app-cycle.mybluemix.net/')
 
     socket.on("message1",function(message){
 
