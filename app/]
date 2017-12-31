@@ -11,7 +11,6 @@ var extras = require('./extras.js')
 var extras = require('./extras.js');
 var async = require("async");
 var request = require("request");
-var ml_controller=require("./controller/ml.js");
 //JQuery
 var jsdom = require('jsdom');
 const { JSDOM } = jsdom;
@@ -32,38 +31,44 @@ app.use(bodyParser.json())
 
 // UPort code from here
 
-const uport = new Connect('Cycle', {
+app.post('/authenticate', function (req, res) {
+    
+ 	const uport = new Connect('Cycle', {
       clientId: '2ojxCynUCy1VWqWJNJSVFAoRRyCPZDkSPw1',
       network: 'rinkeby',
       signer: SimpleSigner('e42efa79fadf96bfb9e9c4b0f75ea010640f55adcdc3cbdfa13638fe361d923d')
     })
 
-app.post('/authenticate', function (req, res) {
-    
     // Request credentials to login
     uport.requestCredentials({
       requested: ['name', 'phone', 'country'],
       notifications: true // We want this if we want to recieve credentials
     })
     .then((credentials) => {
-      console.log("Something good");
+      // Do something
     })
+
+    // Attest specific credentials
+    uport.attestCredentials({
+      sub: THE_RECEIVING_UPORT_ADDRESS,
+      claim: {
+        CREDENTIAL_NAME: CREDENTIAL_VALUE
+      },
+      exp: new Date().getTime() + 30 * 24 * 60 * 60 * 1000, // 30 days from now
+    })
+
+    console.log('works');
 });
 
 
 //ML service things setup from here
-var did1 = 'b76b2426-643b-4001-8574-84038d9845eb';
-var did2 = '9aaecf45-3faf-497c-9480-ae3322b7c111';
+var did1 = '';
+var did2 = '';
 app.get("/ml",(req,res)=>{
+	ml_controller.ml(did1);
+	ml_controller.ml(did2);
 });
-io.sockets.on('connection',function(socket){
-	
-	setInterval(function(){
-		console.log("yahoo")
-		ml_controller.ml(did1);
-		ml_controller.ml(did2);
-	},1000*30)
-})
+
 
 // load local VCAP configuration  and service credentials
 var vcapLocal;

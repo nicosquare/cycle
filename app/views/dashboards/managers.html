@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cycle</title>
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../assets/css/managers.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="row top">
+    <!-- <img src="../assets/img/image.png"class="img-responsive place" alt=""> -->
+    <div class="nav">
+      <ul class="other">
+        <!-- <li class="left">Team Dashboard</li> -->
+        <li class="active"><a data-toggle="pill" href="#grids" class="btn btn-default"></a></li>
+        <li><a data-toggle="pill" href="#homes" class="btn btn-default"></a></li>
+        <li><a data-toggle="pill" href="#companies" class="btn btn-default"></a></li>
+        <li><a data-toggle="pill" href="#locations" class="btn btn-default"></a></li>
+        <li><a data-toggle="pill" href="#energy" class="btn btn-default"></a></li>
+        <!-- <li class="right">Owner / Owner-name</li> -->
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- DASHBOARD BODY -->
+
+  <div class="tab-content">
+    <div id="grids" class="container tab-pane fade in active">
+      <div class="page-header">
+        <img src="../assets/img/Asset 3.png" class="grid-img img-responsive" alt="">
+      </div>
+      <div class="filters">
+        <img class="filter-img img-responsive " src="../assets/img/Asset 4.png" alt="">
+        <!-- <ul class="filter">
+          <li>Location</li>
+          <li>Energy output</li>
+          <li>Energy Consumed</li>
+        </ul> -->
+        <img src="../assets/img/Asset 5.png" class="img-responsive opts-img" alt="">
+      </div>
+      <div class="container">
+        <div class='row'>
+          <div class='col-md-12 carou'>
+            <div class="carousel slide media-carousel" id="media">
+              <div class="carousel-inner">
+                <div class="item  active">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
+                    </div>
+                    <div class="col-md-3">
+                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
+                    </div>
+                    <div class="col-md-3">
+                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
+                    </div>
+                    <div class="col-md-3">
+                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 8.png"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-md-4">
+                    <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
+                  </div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#media" class="left carousel-control">
+                <</a>
+                  <a data-slide="next" href="#media" class="right carousel-control">></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="homes" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <img src="../assets/img/Asset 12.png" class="img-responsive home-img" alt="">
+          <img src="../assets/img/Asset 13.png" class="img-responsive homes-img" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="companies" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <img src="../assets/img/Asset 15.png" class="img-responsive home-img" alt="">
+          <div class="col-md-12">
+            <div class="col-md-3">
+              <img src="../assets/img/Asset 16.png" class="img-responsive homes-img" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/img/Asset 17.png" class="img-responsive homes-img" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/img/Asset 18.png" class="img-responsive homes-img" alt="">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/img/Asset 19.png" class="img-responsive homes-img" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="locations" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <img src="../assets/img/Asset 21.png" class="img-responsive locations-img" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="energy" class="tab-pane fade">
+      <div class="container">
+        <div class="row">
+          <img src="../assets/img/Asset 23.png" class="img-responsive home-img" alt="">
+          <img src="../assets/img/Asset 24.png" class="img-responsive homes-img" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#media').carousel({
+        pause: true,
+        interval: false,
+      });
+    });
+  </script>
+</body>
+
+</html>
