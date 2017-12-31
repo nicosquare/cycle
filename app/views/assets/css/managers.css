@@ -1,0 +1,196 @@
+body {
+  overflow-x: hidden;
+}
+
+.top {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  background-image: url(../img/image.png);
+  /* border:2px solid blue; */
+  background-size: cover;
+  color: white;
+}
+
+.place {
+  width: 100%;
+  height: 90px;
+}
+
+.nav {
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* border:2px solid red; */
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.btn-default {
+  background: transparent;
+  width:8em;
+  border:none;
+  padding:30px;
+  /* border: 1px solid grey;
+  transition: .4s;
+  letter-spacing: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+}
+
+.btn-default:hover{
+  border-top: 2px solid white;
+  background: none;
+}
+
+.btn-default:focus{
+  background: none;
+}
+
+.btn-default:visited{
+  background: none;
+}
+#grids .page-header {
+  border: none;
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+  color: black;
+  margin: auto;
+}
+
+.filters {
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.filter-img {
+  height: 30px;
+  margin: auto;
+}
+
+.grid-img {
+  margin: auto;
+  height: 50px;
+}
+
+.opts-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  height: 30px;
+}
+
+.home-img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  height: 200px;
+
+}
+
+.homes-img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  height: 350px;
+  margin-bottom:3em;
+}
+
+.locations-img{
+  height:500px;
+  margin-top: 3em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4em;
+}
+
+ul.filter li {
+  display: inline;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.other {
+  margin-top: 2em;
+  margin-left: 18em;
+}
+
+#companies{
+  margin-bottom: 5em;
+}
+/* CAROUSEL SLIDER */
+
+/* carousel */
+
+.media-carousel {
+  margin: auto;
+}
+
+/* Previous button  */
+
+.media-carousel .carousel-control.left {
+  left: -12px;
+  height: 60px;
+  font-size: 3em;
+  width: 50px;
+  margin-top: 30px;
+  background: none;
+  color: #ff751a;
+}
+
+/* Next button  */
+
+.media-carousel .carousel-control.right {
+  right: -12px !important;
+  height: 40px;
+  width: 40px;
+  font-size: 3em;
+  margin-top: 30px;
+  background: none;
+  color: #ff751a;
+}
+
+#media a {
+  color: #ff751a;
+}
+
+/* Changes the position of the indicators */
+
+.media-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+/* Changes the colour of the indicators */
+
+.media-carousel .carousel-indicators li {}
+
+.media-carousel .carousel-indicators .active {}
+
+.media-carousel img {
+  height: 120px;
+  width: 200px;
+}
+
+.thumbnail {
+  border: none;
+}
+
+/* End carousel */
