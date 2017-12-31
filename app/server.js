@@ -71,8 +71,9 @@ io.sockets.on('connection',function(socket){
 	
 	setInterval(function(){
 		console.log("yahoo")
-		ml_controller.ml(did1);
-		ml_controller.ml(did2);
+		d1 = ml_controller.ml(did1);
+		d2 = ml_controller.ml(did2);
+		io.emit("message",d1);
 	},1000*30)
 })
 

@@ -3,6 +3,7 @@ var request = require('request');
 var extras = require('../extras.js');
 var cloudant_controller = require('./cloundant.js');
 var items = [];
+var ans1 ;
 var ml = function(d_id){
 	var item1 = [request];
 	var url = extras.urltoken +	d_id;
@@ -47,8 +48,10 @@ var ml = function(d_id){
 				}
 			}
 				,(error,response,body)=>{
-					var ans1 = response.body.values[0][10]
+					//console.log(num) 
+					ans1 = response.body.values[0][10]
 					console.log(ans1)
+					//if(num==1){
 					var data = {
 						battery_energy : ans1
 					}
@@ -63,7 +66,8 @@ var ml = function(d_id){
 							console.log("Inserted document")
 						}
 					})
-					console.log(ans)	
+					console.log(ans1)
+
 				})
 
 
@@ -72,6 +76,7 @@ var ml = function(d_id){
 
 
 })
+return ans1
 };
 module.exports = {
 	ml
