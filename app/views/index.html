@@ -20,53 +20,48 @@
     <div id="particles-js"></div>
     <div class="row">
       <div class="col-md-6 col-xs-12" id="overlay">
+        
         <h1>Decentralized and Intelligent exchange of energy</h1>
-        <h2>Everyday, Everytime.</h2>
+        <h2>Empowering people, everyday.</h2>
         <p><span>IOT</span> and <span>Blockchain</span> come together to power cycle</p>
         <div class="buttons">
           <ul>
-            <li><a href=""><button class="btn btn-primary">Join Cycle</button></a></li>
-            <li><a href=""><button class="btn btn-default">Learn More</button></a></li>
+            <li><a href="dashboards/homeowner.html"><button class="btn btn-primary">Homeowner</button></a></li>
+            <li><a href="dashboards/managers.html"><button class="btn btn-default">Manager</button></a></li>
           </ul>
+        </div> 
+      </div>
+      <div class="col-md-6 col-xs-12" id="overlay">
+        
+        <div class="logo">
+          <img src="assets/img/cycle_logo-s.png">
         </div>
+
       </div>
     </div>
   </div>
-
+  
   <div class="container main">
     <div class="row tile">
       <div class="col-md-4 col-xs-12 tiles">
         <div class="content">
           <div class="content-top">
             <i class="fa fa-exchange feature-icon" aria-hidden="true"></i>
-            <h1>Intelligent Transfer</h1>
+            <h1>Reliable Hardware</h1>
           </div>
           <div class="content-bottom">
-            <h3>Machine learning algorithms ensure permanent exchange of energy all the time</h3>
-			<p><b> Energy flow through Battery 1 </b></p>
-			<script src="/socket.io/socket.io.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-
+            <h3>Easy to access, cut of the edge generator and batery from our big allies.</h3>
           </div>
         </div>
       </div>
- 	<script src="/socket.io/socket.io.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-	<script>
-		var socket = io.connect('http://localhost:3000')
-		socket.on("message1",function(message){
-			$("p").text("Energy Flow through Battery and Grid are  "+message+ "Respectively")
-		socket.o
-})
-	</script>
      <div class="col-md-4 col-xs-12 tiles">
         <div class="content" id="box2">
           <div class="content-top">
             <i class="fa fa-cogs" aria-hidden="true"></i>
-            <h1>Hardware Integration</h1>
+            <h1>Harvester</h1>
           </div>
           <div class="content-bottom">
-            <h3>Our harvesters analyze and learn energy consumption habits</h3>
+            <h3>Our IOT device connected with powerful cloud services boost surplus of energy generation. It ensures permanent Exchange of energy between users.</h3>
           </div>
         </div>
       </div>
@@ -77,27 +72,88 @@
             <h1>Blockchain Technology</h1>
           </div>
           <div class="content-bottom">
-            <h3>Energy transactions are performed over a blockchain network based on Consensys technology</h3>
+            <h3>Energy transactions are held and secure in Ethereum network generating CLEs, our Cryptocurrency</h3>
           </div>
         </div>
       </div>
     </div>
     <div class="row tagline">
-      <h1>A Tagline can be placed here A Tagline can be placed here</h1>
+      <h1>"We have created a hardware and software platform that allows users to sell the over-generation of energy to users who need it in exchange for tokens"</h1>
       <i class="fa fa-sun-o" aria-hidden="true"></i>
     </div>
   </div>
 
   <div class="container-fluid prefoot">
     <div class="row">
-      <div class="col-md-6 col-xs-12">
+
+      <div class="row tagline">
+        <h1 style="color: white">Test the integration of our technologies</h1>
+        <i class="fa fa-code" aria-hidden="true"></i>
       </div>
+
       <div class="col-md-6 col-xs-12">
-        <div class="sample-content">
-          <h1>Lorem ipsu als nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sin.</h1>
-          <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <div class="content">
+          <div class="content-top">
+            <i class="fa caret-right" aria-hidden="true"></i>
+            <h1>Machine Learning Prediction</h1>
+          </div>
+          <div class="content-bottom">
+            <h3>The energy management is controlled by machine learning models who manages the switches! Here a real time demo with data from our database.</h3>
+          </div>
+          <div class="content-bottom">
+            <p id="ml-prediction" style="color: white"></p>
+          </div>
         </div>
       </div>
+
+      <div class="col-md-6 col-xs-12">
+         <div class="content">
+          <div class="content-top">
+            <i class="fa caret-right" aria-hidden="true"></i>
+            <h1>Operations with Cryptocurrency</h1>
+          </div>
+          <div class="content-bottom">
+            <h3>The energy management is controlled by machine learning models who manages the switches! Here a real time demo with data from our database.</h3>
+          </div>
+          <div class="content-bottom">  
+            <ul>
+              <li><a id="cyclecoin-test"><button class="btn btn-primary">Test Cyclecoin acquisition</button></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-12">
+         <div class="content">
+          <div class="content-top">
+            <i class="fa caret-right" aria-hidden="true"></i>
+            <h1>Authentication with Uport</h1>
+          </div>
+          <div class="content-bottom">
+            <h3>We secured the crucial operations in the system using UPort to validate identity of users.</h3>
+          </div>
+          <div class="content-bottom">  
+            <ul>
+              <li><a id="uport-test"><button class="btn btn-primary">Test UPort Authentication</button></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-12">
+         <div class="content">
+          <div class="content-top">
+            <i class="fa caret-right" aria-hidden="true"></i>
+            <h1>Watson Languages services</h1>
+          </div>
+          <div class="content-bottom">
+            <h3>We integrate IBM technologies aiming to reduce the language barriers.</h3>
+          </div>
+          <div class="content-bottom">  
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -116,14 +172,10 @@
       </div>
     </div>
 
-    <ul>
-      <li><a id="uport-test"><button class="btn btn-primary">Test UPort</button></a></li>
-    </ul>
-
   </div>
 
   <div class="container footer">
-    <p>Cycle 2017</p>
+    <p>All the rights reserved to the brand - Cycle 2017</p>
   </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -131,7 +183,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src='https://cldup.com/S6Ptkwu_qA.js'></script>
   <script src="./assets/js/app.js" type="text/javascript"></script>
-	</script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
+
+    var socket = io.connect('http://localhost:3000')
+
+    socket.on("message1",function(message){
+
+      var message_transform = message.replace("1","On").replace("0","Off");
+
+      $('#ml-prediction').text("Energy Flow through Battery and Grid are  "+message+ "Respectively")
+    socket.o
+    })
+
+  </script>
+
 </body>
 
 </html>
