@@ -1,3 +1,5 @@
+![Alt text](https://raw.githubusercontent.com/nicosquare/cycle/master/resources/img/cycle_logo-s.png?raw=true "Title")
+
 # Cycle
 Repository for demo in Gov World Hackathon.
 
@@ -26,3 +28,7 @@ We are proposing a IOT system based on devices, that we call “Harvesters”. O
 
 Supporting the hardware implementation, machine learning algorithms allows the harvester to learn about the consumption habits on each house and IBM’s IOT service allows to secure and identify each component in the net of harvesters. Energy transactions well be performed over a blockchain network based on Consensys technology by creating a token that will be the piece of exchange among the whole system. More details over token exchange and the rules of its work still being defined right now.
 
+## Resource URLs
+
+- Main app: https://app-cycle.mybluemix.net/
+- IOT Network on Node-RED: https://app-cycle-iot.mybluemix.net/
