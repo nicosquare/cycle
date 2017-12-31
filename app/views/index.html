@@ -54,6 +54,14 @@
           </div>
         </div>
       </div>
+ 	<script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+		var socket = io.connect('https://app-cycle.mybluemix.net/')
+		socket.on("message1",function(message){
+			$("p").text("Energy Flow through Battery and Grid are  "+message+ "Respectively")
+})
+	</script>
      <div class="col-md-4 col-xs-12 tiles">
         <div class="content" id="box2">
           <div class="content-top">
