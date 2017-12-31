@@ -11,7 +11,6 @@ var extras = require('./extras.js')
 var extras = require('./extras.js');
 var async = require("async");
 var request = require("request");
-var ml_controller=require("./controller/ml.js");
 //JQuery
 var jsdom = require('jsdom');
 const { JSDOM } = jsdom;
@@ -63,18 +62,13 @@ app.post('/authenticate', function (req, res) {
 
 
 //ML service things setup from here
-var did1 = 'b76b2426-643b-4001-8574-84038d9845eb';
-var did2 = '9aaecf45-3faf-497c-9480-ae3322b7c111';
+var did1 = '';
+var did2 = '';
 app.get("/ml",(req,res)=>{
+	ml_controller.ml(did1);
+	ml_controller.ml(did2);
 });
-io.sockets.on('connection',function(socket){
-	
-	setInterval(function(){
-		console.log("yahoo")
-		ml_controller.ml(did1);
-		ml_controller.ml(did2);
-	},1000*30)
-})
+
 
 // load local VCAP configuration  and service credentials
 var vcapLocal;

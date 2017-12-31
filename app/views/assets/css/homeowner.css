@@ -1,0 +1,143 @@
+body{
+  background-color: white;
+  height:100vh;
+  overflow-x: hidden;
+}
+.top{
+  height:auto;
+  background-image:url(https://www.hoomanaspamaui.com/wp-content/uploads/2014/07/africa.jpg);
+  background-size: cover;
+  /* border:2px solid blue; */
+  color:white;
+  margin-bottom: 4em;
+}
+.nav{
+  height: auto;
+  margin:1em;
+  /* border:2px solid red; */
+}
+.nav ul li{
+  display: inline-block;
+  margin-left: 0.5em;
+}
+.right{
+  margin-right: 2em;
+  float:right;
+}
+
+
+.main{
+  margin-top: 8em;
+  margin-bottom: 4em;
+}
+
+.stats{
+  height: 70vh;
+}
+
+.bar{
+  width:90%;
+  margin-top:1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom:1em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.bar-text{
+  text-align: center;
+  border: 1px solid orange;
+  color:green;
+  background-color: orange;
+  width:90%;
+  padding:10px;
+  margin-top:1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom:1em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.well{
+  border:none;
+  background-color: green;
+}
+
+.sample-image{
+  background-image: url(https://images.homedepot-static.com/productImages/2734b49c-6daa-47e1-84c4-42e40bf24c26/svn/newtechwood-tile-samples-us-qd-zx-ok-s-64_400_compressed.jpg);
+  background-size: cover;
+  padding:20px;
+  height:10vh;
+}
+
+.map{
+  margin-top: 2em;
+  height:30vh;
+  background-repeat: no-repeat;
+  background-image: url(https://unifaceinfo.com/wp-content/uploads/2014/01/u96_htmlwidget_preview.png);
+  background-size: cover;
+}
+.tile-top{
+}
+.tile-top ul li{
+  display: inline-block;
+  margin-top:0.6em;
+}
+
+.progress{
+  width:70%;
+  margin:auto;
+}
+
+.progress-bar{
+  color:grey;
+  background-color: grey;
+}
+.progress-label {
+    float: left;
+    margin-right: 1em;
+}
+
+.filter-btns{
+  text-align: center;
+}
+.filter-btns .btn-default{
+  border:1px solid grey;
+  font-weight: bold;
+  transition: .4s;
+  letter-spacing: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+}
+
+.btn-default:hover{
+  background-color: grey;
+  color:white;
+  transition: .4s;
+}
+.tile-body{
+  background-color: #f2f2f2;
+}
+.details-box{
+  border:2px solid blue;
+}
+.ct-square{
+  height:200px;
+  width:100%;
+}
+.tile-body h3{
+  text-align: center;
+}
+.box{
+  border-radius:30px;
+  background-color: #f2f2f2;
+  max-height:65vh;
+}

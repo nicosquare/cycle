@@ -47,8 +47,22 @@ var ml = function(d_id){
 				}
 			}
 				,(error,response,body)=>{
+					var ans1 = response.body.values[0][10]
+					console.log(ans1)
+					var data = {
+						battery_energy : ans1
+					}
 					console.log(response.body.values)
 					var ans = response.body;
+					cloudant_controller.did1.insert(data,function(error,result){
+						if(error){
+							throw error;
+
+						}
+						else{
+							console.log("Inserted document")
+						}
+					})
 					console.log(ans)	
 				})
 
