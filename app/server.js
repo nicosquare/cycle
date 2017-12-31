@@ -32,22 +32,33 @@ app.use(bodyParser.json())
 
 // UPort code from here
 
-const uport = new Connect('Cycle', {
+app.post('/authenticate', function (req, res) {
+    
+ 	const uport = new Connect('Cycle', {
       clientId: '2ojxCynUCy1VWqWJNJSVFAoRRyCPZDkSPw1',
       network: 'rinkeby',
       signer: SimpleSigner('e42efa79fadf96bfb9e9c4b0f75ea010640f55adcdc3cbdfa13638fe361d923d')
     })
 
-app.post('/authenticate', function (req, res) {
-    
     // Request credentials to login
     uport.requestCredentials({
       requested: ['name', 'phone', 'country'],
       notifications: true // We want this if we want to recieve credentials
     })
     .then((credentials) => {
-      console.log("Something good");
+      // Do something
     })
+
+    // Attest specific credentials
+    uport.attestCredentials({
+      sub: THE_RECEIVING_UPORT_ADDRESS,
+      claim: {
+        CREDENTIAL_NAME: CREDENTIAL_VALUE
+      },
+      exp: new Date().getTime() + 30 * 24 * 60 * 60 * 1000, // 30 days from now
+    })
+
+    console.log('works');
 });
 
 
@@ -57,13 +68,19 @@ var did2 = '9aaecf45-3faf-497c-9480-ae3322b7c111';
 app.get("/ml",(req,res)=>{
 });
 io.sockets.on('connection',function(socket){
-	
 	setInterval(function(){
 		console.log("yahoo")
-		d1 = ml_controller.ml(did1);
-		d2 = ml_controller.ml(did2);
-		io.emit("message",d1);
-	},1000*30)
+		d1 = ml_controller.ml(did1,1);
+		d2 = ml_controller.ml(did2,2);
+		if(!d1)
+			d1=1;
+		if(!d2)
+			d2=1;
+		var ans = d1.toString()
+		ans = ans + "and "+ d2.toString();
+		socket.emit("message1",ans);
+
+	},1000*60)
 })
 
 // load local VCAP configuration  and service credentials
@@ -106,10 +123,7 @@ if (appEnv.services['cloudantNoSQLDB'] || appEnv.getService(/cloudant/)) {
 //serve static file (index.html, images, css)
 app.use(express.static(__dirname + '/views'));
 io.sockets.on('connection',function(socket){
-	io.emit("message","You are connected");
-})
-io.sockets.on('connection',function(socket){
-	io.emit("message","noconnet")
+	socket.emit("message","You are connected");
 })
 var port = process.env.PORT || 3000
 	server.listen(port, function() {

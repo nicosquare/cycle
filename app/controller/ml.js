@@ -4,7 +4,7 @@ var extras = require('../extras.js');
 var cloudant_controller = require('./cloundant.js');
 var items = [];
 var ans1 ;
-var ml = function(d_id){
+var ml = function(d_id,num){
 	var item1 = [request];
 	var url = extras.urltoken +	d_id;
 	async.each(item1, function (item ,callback) {
@@ -12,7 +12,7 @@ var ml = function(d_id){
 			var json = JSON.parse(body);
 			autho = json.token;
 			callback();
-			console.log("f1")
+			//console.log("f1")
 		})
 	},function(){
 		var item2 = [cloudant_controller];
@@ -34,7 +34,6 @@ var ml = function(d_id){
 		},
 	
 		function(){
-			console.log("hfaff")
 			request({
 				url : url,
 				method : 'POST',
@@ -48,14 +47,14 @@ var ml = function(d_id){
 				}
 			}
 				,(error,response,body)=>{
-					//console.log(num) 
-					ans1 = response.body.values[0][10]
+			//		console.log(num) 
+			//		ans1 = response.body.values[0][10]
 					console.log(ans1)
-					//if(num==1){
+					if(num==1){
 					var data = {
 						battery_energy : ans1
 					}
-					console.log(response.body.values)
+					//console.log(response.body.values)
 					var ans = response.body;
 					cloudant_controller.did1.insert(data,function(error,result){
 						if(error){
@@ -65,8 +64,21 @@ var ml = function(d_id){
 						else{
 							console.log("Inserted document")
 						}
-					})
-					console.log(ans1)
+					})}
+						else {
+							var data1 = {
+								grid_energy : ans1
+							}
+							cloudant_controller.did2.insert(data1,function(error,result){
+								if(error){
+									throw error;
+								}
+								else{
+									console.log("inserted document")
+								}
+							})
+						}
+			//		console.log(ans1)
 
 				})
 
