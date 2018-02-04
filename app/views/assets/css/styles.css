@@ -100,10 +100,16 @@ ul li {
   font-weight: 700;
 }
 
-.logo {
+.logo_img{
+  top:20%;
+  right: 15%;
   float: right;
-  padding-right: 25%;
-  padding-top: 25%;
+  position: absolute;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* END OF PARTICLE STYLING */
