@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
   background-color: white;
   height:100vh;
+  font-family: 'Open Sans', serif;
   overflow-x: hidden;
+}
+
+/*===================== HOMEOWNER NAVBAR========================== */
+.navbar-brand{
+  font-weight: bold;
+}
+
+.owner-img{
+  height:50px;
+  width:50px;
 }
 .top{
   height:auto;
@@ -24,6 +36,11 @@ body{
   margin-right: 2em;
   float:right;
 }
+.right span{
+  font-weight: 900;
+}
+
+/*================== HOMEOWNER STATS======================= */
 
 
 .main{
@@ -61,12 +78,12 @@ body{
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .well{
   color:green;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   background-color: #ecf9f2;
 }
@@ -88,6 +105,7 @@ body{
 
 
 .tile-top ul li{
+  color: #00334d;
   display: inline-block;
   margin-top:0.6em;
 }
