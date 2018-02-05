@@ -10,15 +10,23 @@ body{
 .navbar-brand{
   font-weight: bold;
 }
+.home{
+  color: white;
+  text-decoration: underline;
+}
 
 .owner-img{
   height:50px;
   width:50px;
 }
 .top{
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/managers-0.jpg')no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+-webkit-filter: contrast(90%);
   height:auto;
-  background-image:url(https://www.hoomanaspamaui.com/wp-content/uploads/2014/07/africa.jpg);
-  background-size: cover;
   /* border:2px solid blue; */
   color:white;
   margin-bottom: 4em;
