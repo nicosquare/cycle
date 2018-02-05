@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'Yantramanav';
+    src: url('../fonts/Yantramanav-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
   overflow-x: hidden;
 }
@@ -5,13 +14,52 @@ body {
 .top {
   height: 100px;
   width: 100%;
-  margin: 0;
-  background-image: url(../img/image.png);
   /* border:2px solid blue; */
-  background-size: cover;
+  margin:0;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/managers-0.jpg')no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+-webkit-filter: contrast(90%);
   color: white;
 }
+.top ul{
+  border: 1px solid red;
+  height:auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
 
+.top ul li{
+  float: left;
+  list-style: none;
+}
+.top .right{
+  float: right;
+}
+.top .left {
+  float: left;
+}
+.top .center{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height:30px;
+  border-bottom-right-radius: 30px;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+
+}
+.top .center button{
+  color:black;
+  margin-left: 1.3em;
+}
+/*
 .place {
   width: 100%;
   height: 90px;
@@ -32,7 +80,7 @@ body {
 
 ul li a {
   text-decoration: none;
-}
+} */
 
 .btn-default {
   background: transparent;
@@ -71,11 +119,6 @@ hr {
   width: 50%;
   color: black;
   margin: auto;
-}
-
-.filters {
-  margin-bottom: 5em;
-  text-align: center;
 }
 
 .filter-img {
@@ -129,6 +172,42 @@ ul.filter li {
   margin-top: 2em;
   margin-left: 18em;
 }
+
+/* GRIDS PANEL STYLING===================================================== */
+.page-header h1{
+  font-family: 'Yantramanav',
+  color: black;
+  font-size:2em;
+}
+
+.filters {
+  text-align: center;
+}
+.filters h2 {
+  color: #A5445D;
+}
+
+.filters ul{
+  text-align: center;
+}
+
+hr{
+  width:50%;
+  margin: auto;
+  color:black;
+  border-width: 2px;
+}
+
+
+.filters ul li {
+  display: inline;
+  margin:2em;
+  font-size: 1.3em;
+  color: grey;
+}
+
+
+/* COMPANIES PANEL STYLING====================================================== */
 
 #companies{
   margin-bottom: 5em;

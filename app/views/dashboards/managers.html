@@ -16,36 +16,63 @@
 <body>
   <!-- NAVBAR -->
   <div class="row top">
+    <ul>
+      <li class="left">Team Dashboard</li>
+      <div class="btn-group center">
+        <a data-toggle="pill" href="#grids" class="toggles">Grids</a>
+        <a data-toggle="pill" href="#homes"  class="toggles">Homes</a>
+        <a data-toggle="pill" href="#companies" class="toggles">Companies</a>
+        <a data-toggle="pill" href="#locations" class="toggles">Locations</a>
+        <a data-toggle="pill" href="#energy" class="toggles">Energy</a>
+      </div>
+      <li class="right">Admin / Dave</li>
+    </ul>
+  </div>
+
+
+
+
+  <!-- NAVBAR -->
+  <!-- <div class="row top"> -->
     <!-- <img src="../assets/img/image.png"class="img-responsive place" alt=""> -->
-    <div class="nav">
-      <ul class="other">
+    <!-- <div class="nav">
+      <ul class="other"> -->
         <!-- <li class="left">Team Dashboard</li> -->
-        <li class="active"><a data-toggle="pill" href="#grids" class="btn btn-default"></a></li>
+        <!-- <li class="active"><a data-toggle="pill" href="#grids" class="btn btn-default"></a></li>
         <li><a data-toggle="pill" href="#homes" class="btn btn-default"></a></li>
         <li><a data-toggle="pill" href="#companies" class="btn btn-default"></a></li>
         <li><a data-toggle="pill" href="#locations" class="btn btn-default"></a></li>
-        <li><a data-toggle="pill" href="#energy" class="btn btn-default"></a></li>
+        <li><a data-toggle="pill" href="#energy" class="btn btn-default"></a></li> -->
         <!-- <li class="right">Owner / Owner-name</li> -->
-      </ul>
+      <!-- </ul>
     </div>
-  </div>
+  </div> -->
+
 
 
   <!-- DASHBOARD BODY -->
 
   <div class="tab-content">
+    <!-- GRIDS -->
     <div id="grids" class="container tab-pane fade in active">
       <div class="page-header">
-        <img src="../assets/img/Asset 3.png" class="grid-img img-responsive" alt="">
+        <h1>GRids</h1>
       </div>
       <div class="filters">
-        <img class="filter-img img-responsive " src="../assets/img/Asset 4.png" alt="">
+        <h2>Filter By</h2>
+        <hr>
+        <ul>
+          <li>Location</li>
+          <li>Energy Output</li>
+          <li>Consumption</li>
+        </ul>
+        <!-- <img class="filter-img img-responsive " src="../assets/img/Asset 4.png" alt=""> -->
         <!-- <ul class="filter">
           <li>Location</li>
           <li>Energy output</li>
           <li>Energy Consumed</li>
         </ul> -->
-        <img src="../assets/img/Asset 5.png" class="img-responsive opts-img" alt="">
+        <!-- <img src="../assets/img/Asset 5.png" class="img-responsive opts-img" alt=""> -->
       </div>
       <div class="container">
         <div class='row'>
@@ -82,6 +109,9 @@
         </div>
       </div>
     </div>
+
+    <!-- HOMES PANEL -->
+
     <div id="homes" class="tab-pane fade">
       <div class="container">
         <div class="row">
@@ -90,6 +120,9 @@
         </div>
       </div>
     </div>
+
+    <!-- COMPANIES -->
+
     <div id="companies" class="tab-pane fade">
       <div class="container">
         <div class="row">
@@ -111,6 +144,9 @@
         </div>
       </div>
     </div>
+
+    <!-- LOCATIONS -->
+
     <div id="locations" class="tab-pane fade">
       <div class="container">
         <div class="row">
@@ -118,6 +154,9 @@
         </div>
       </div>
     </div>
+
+    <!-- ENERGY -->
+
     <div id="energy" class="tab-pane fade">
       <div class="container">
         <div class="row">
@@ -127,10 +166,6 @@
       </div>
     </div>
   </div>
-
-
-
-
   </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
