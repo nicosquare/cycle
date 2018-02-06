@@ -1,12 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
     font-family: 'Yantramanav';
-    src: url('../fonts/Yantramanav-Regular.woff') format('woff');
+    src: url('../fonts/Yantramanav-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
 
@@ -177,10 +175,13 @@ ul.filter li {
 }
 
 /* GRIDS PANEL STYLING===================================================== */
-.page-header h1{
+#grids .page-header h1{
+  /* border: 1px solid red; */
+  margin-top: 1.2em;
   font-family: 'Yantramanav';
-  color: grey;
-  font-size:2em;
+  color:  #5C5A5F;
+  letter-spacing: 0.1em;
+  font-size:3em;
 }
 
 .filters {
@@ -189,6 +190,7 @@ ul.filter li {
 .filters h2 {
   font-family: 'Yantramanav';
   color: #A5445D;
+  margin-bottom:0.5em;
 }
 
 .filters ul{
@@ -212,6 +214,124 @@ hr{
 }
 
 
+
+
+/* HOMES PANEL========================================= */
+
+#homes .page-header {
+  text-align: center;
+  margin-top: 1em;
+}
+
+#homes .page-header h1 {
+  font-size: 5em;
+  color:#5C5A5F;
+  padding: 0.5em;
+  font-family: 'Yantramanav';
+  font-weight:300;
+}
+
+#homes h2 {
+  font-family: 'Open Sans', serif;
+  font-size: 1.6em;
+  margin:1em;
+}
+
+#homes h2 .homes_cnt {
+  color:#DFA400;
+}
+
+#homes h2 .homes_cnt i {
+  padding: 2px;
+  border:2px solid #DFA400;
+  border-radius: 50%;
+  color:#DFA400;
+}
+
+#homes h2 .active_cnt {
+  color:#54936F;
+}
+
+#homes h2 .active_cnt i{
+  padding: 2px;
+  border:2px solid #54936F;
+  border-radius: 50%;
+  color:#54936F;
+}
+
+#homes input {
+  padding: 0.5em;
+  border:0px solid red;
+  background-color: #f2f2f2;
+  color:black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 58%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+#homes input:focus {
+  outline: none;
+  background-color: white;
+  border-bottom: 0.8px solid #d9d9d9;
+}
+
+/*
+#homes .table {
+  width: 60%;
+  margin:auto;
+  border: none !important;
+}
+
+#homes .content {
+  border: 2px solid red;
+  width: 70%;
+  height:30px;
+  margin: auto;
+}
+.testing{
+  width:80%;
+  text-align: center;
+  margin: auto;
+  border: 1px solid yellow;
+
+}
+.test{
+  border: 1px solid yellow;
+  height: 45px;
+  width:90%;
+}
+.test li {
+  float: left;
+  list-style: none;
+}
+.test .testm, .test2 {
+  border: 1px solid blue;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.image {
+  border: 1px solid blue;
+}
+.name .detail {
+  /* border: 1px solid yellow; */
+}
+.name .detail h3{
+  margin-top: auto;
+}
+.table-img {
+    height:100px;
+    width:100px;
+    border:2px solid orange;
+}
+
+.table-r {
+  height:30px;
+  border: 2px solid red;
+} */
 /* COMPANIES PANEL STYLING====================================================== */
 
 #companies{
