@@ -419,6 +419,81 @@ hr{
   width: 90%;
   margin: auto;
 }
+
+/* LOCATIONS */
+#locations .page-header{
+  text-align: center;
+}
+
+#locations .page-header h1 {
+  font-size: 4em;
+  color:#5C5A5F;
+  padding: 0.3em;
+  font-family: 'Yantramanav';
+  font-weight:300;
+}
+
+#locations input {
+  padding: 0.5em;
+  border:0px solid red;
+  background-color: #f2f2f2;
+  color:black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 58%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+#locations input:focus {
+  outline: none;
+  background-color: white;
+  border-bottom: 0.8px solid #d9d9d9;
+}
+#locations .loc_img {
+  height: 300px;
+  width:390px;
+  margin: auto;
+}
+
+/* ENERGY ========================*/
+#energy .page-header{
+  text-align: center;
+}
+#energy .page-header h3 {
+  font-size: 1.4em;
+  color:#42496C;
+}
+
+#energy .page-header h1 {
+  font-size: 4em;
+  color:#5C5A5F;
+  padding: 0.3em;
+  font-family: 'Yantramanav';
+  font-weight:300;
+}
+#energy table {
+  text-align: center;
+  margin:auto;
+}
+
+.log_img {
+  height: 100px;
+  width:100px;
+}
+.en-p {
+  color: #DFA400;
+  font-size:1.2em;
+  margin-left:1em;
+
+}
+.en-c {
+  font-size: 1.2em;
+  color:#54936F;
+  margin-left:1em;
+}
+
 /* CAROUSEL SLIDER */
 
 /* carousel */
