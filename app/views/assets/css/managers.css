@@ -226,6 +226,7 @@ hr{
 #homes .page-header h1 {
   font-size: 5em;
   color:#5C5A5F;
+  letter-spacing: 0.1em;
   padding: 0.5em;
   font-family: 'Yantramanav';
   font-weight:300;
@@ -277,6 +278,7 @@ hr{
   background-color: white;
   border-bottom: 0.8px solid #d9d9d9;
 }
+
 
 /*
 #homes .table {
@@ -336,6 +338,86 @@ hr{
 
 #companies{
   margin-bottom: 5em;
+}
+
+#companies .page-header h1{
+  font-size: 4em;
+  color:#5C5A5F;
+  padding: 0.3em;
+  font-family: 'Yantramanav';
+  font-weight:300;
+}
+
+#companies .page-header {
+  margin-top: 1em;
+  text-align: center;
+  border: none;
+}
+
+#companies .page-header h2 {
+  margin: 0.5em;
+  padding: 2px;
+  font-size: 1.5em;
+  color:#DFA400;
+  font-family: 'Open Sans', serif;
+}
+
+#companies .page-header i {
+  color:#DFA400;
+  border:2px solid #DFA400;
+  border-radius: 50%;
+}
+
+#companies .homes-img {
+  border-radius: 50%;
+  max-height:100px;
+  max-width:100px;
+}
+
+.tile_top h1{
+  /* border: 1px solid green; */
+  font-size:1.4em;
+  color: #DFA400;
+}
+
+
+.tile_main {
+  /* border: 1px solid red; */
+  text-align: left;
+}
+.tile_cont {
+  font-family: 'Open Sans', serif;
+  margin: 1em;
+  /* border: 1px solid yellow; */
+}
+.bottom {
+  /* border: 1px solid pink; */
+}
+
+.tile_img {
+  border-radius: 50%;
+  height:120px;
+  width:140px;
+}
+.bottom ul {
+  margin-left: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bottom ul li{
+  color:#5C5A5F;
+  width: 100%;
+  font-size: 1.1em;
+  margin: 0.2em;
+}
+.bottom .labels {
+  color: black;
+}
+
+.comp_tiles {
+  width: 90%;
+  margin: auto;
 }
 /* CAROUSEL SLIDER */
 
