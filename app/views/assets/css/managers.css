@@ -382,6 +382,7 @@ hr {
 .tile_top h1 {
   /* border: 1px solid green; */
   font-size: 1.4em;
+  margin: 1em;
   color: #DFA400;
 }
 
@@ -397,13 +398,15 @@ hr {
 }
 
 .bottom {
+  margin: 1em;
   /* border: 1px solid pink; */
 }
 
 .tile_img {
   border-radius: 50%;
   height: 120px;
-  width: 140px;
+  width: 120px;
+  padding: 1em;
 }
 
 .bottom ul {
@@ -417,7 +420,7 @@ hr {
   color: #5C5A5F;
   width: 100%;
   font-size: 1.1em;
-  margin: 0.2em;
+  margin: 0.4em;
 }
 
 .bottom .labels {
@@ -450,7 +453,7 @@ hr {
   color: black;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  width: 58%;
+  width: 30%;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -462,14 +465,19 @@ hr {
 }
 
 #locations .loc_img {
-  height: 300px;
-  width: 390px;
+  height: 400px;
+  width:800px;
   margin: auto;
+  border-radius: 2em;
+}
+#locations{
+  margin-bottom: 2em;
 }
 
 /* ENERGY ========================*/
 
 #energy .page-header {
+  font-family: 'Yantramanav';
   text-align: center;
 }
 
