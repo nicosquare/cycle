@@ -26,10 +26,10 @@
           <ul>
             <li><a href="dashboards/homeowner.html"><button class="btn btn-primary">Homeowner</button></a></li>
             <li><a href="dashboards/managers.html"><button class="btn btn-default">Manager</button></a></li>
-            <li><a href="dashboards/managers.html"><button class="btn btn-default">Manager</button></a></li>
+            <li><a href="dashboards/utility_company.html"><button class="btn btn-default">U-Company</button></a></li>
           </ul>
         </div>
-        <img class="sm_img" src="assets/img/CYCLE 500 X 500 - BLUE.png">      
+        <img class="sm_img" src="assets/img/CYCLE 500 X 500 - BLUE.png">
       </div>
       <img class="logo_img" src="assets/img/CYCLE 500 X 500 - WHTE.png">
       <!-- <div class="col-md-6 col-xs-12" id="overlay">
@@ -88,68 +88,66 @@
     </div>
     <div class="row tagline">
       <h1>"We have created a hardware and software platform that allows users to sell the over-generation of energy to users who need it in exchange for tokens"</h1>
-      <i class="fa fa-sun-o" aria-hidden="true"></i>
+      <img src="../assets/img/work.svg" class="img-responsive tag_Img">
+      <!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
     </div>
   </div>
 
   <div class="container-fluid prefoot">
+    <div class="page-header">
+      <h3>Test the integration of our technologies</h3>
+      <i class="fa fa-code" aria-hidden="true"></i>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12 det_tiles">
+          <div class="content">
+            <div class="content-top">
+              <img src="../assets/img/analytics.svg" class="img-responsive det_image">
+              <h1>Machine Learning Prediction</h1>
+            </div>
+            <div class="content-bottom">
+              <h3>The energy management is controlled by machine learning models which manages the switches! Here a real time demo with data from our database.</h3>
+              <p id="ml-prediction"><i> Energy flow through battery and grid are 1 and 1 respectively</i></p>
+              <script src="/socket.io/socket.io.js"></script>
+              <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+              <script>
+                var socket = io.connect('https://localhost:3000')
+                socket.on("message1", function(message) {
+                  $("p").text("Energy Flow through Battery and Grid are  " + message + "Respectively")
+                })
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12 det_tiles">
+          <div class="content">
+            <div class="content-top">
+              <i class="fa caret-right" aria-hidden="true"></i>
+              <h1>Operations with Cryptocurrency</h1>
+            </div>
+            <div class="content-bottom">
+              <h3>Energy management is controlled by machine learning models manage the switches! Here a real time demo with data from our database.</h3>
+              <ul>
+                <li><a id="cyclecoin-test"><button class="btn btn-primary">Test Cyclecoin acquisition</button></a></li>
+              </ul>
+              <img src="../assets/img/tech.svg" class="img-responsive det_image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row">
-
-      <div class="row tagline">
-        <h1 style="color: white">Test the integration of our technologies</h1>
-        <i class="fa fa-code" aria-hidden="true"></i>
-      </div>
-
-      <div class="col-md-6 col-xs-12">
-        <div class="content">
-          <div class="content-top">
-            <i class="fa caret-right" aria-hidden="true"></i>
-            <h1>Machine Learning Prediction</h1>
-          </div>
-          <div class="content-bottom">
-            <h3>The energy management is controlled by machine learning models who manages the switches! Here a real time demo with data from our database.</h3>
-          </div>
-          <div class="content-bottom">
-            <p id="ml-prediction" style="color: white"><b> Energy flow through battery and grid are 1 and 1 respectively</b></p>
-            <script src="/socket.io/socket.io.js"></script>
-            <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-            <script>
-              var socket = io.connect('https://localhost:3000')
-              socket.on("message1", function(message) {
-                $("p").text("Energy Flow through Battery and Grid are  " + message + "Respectively")
-              })
-            </script>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xs-12">
-        <div class="content">
-          <div class="content-top">
-            <i class="fa caret-right" aria-hidden="true"></i>
-            <h1>Operations with Cryptocurrency</h1>
-          </div>
-          <div class="content-bottom">
-            <h3>The energy management is controlled by machine learning models who manages the switches! Here a real time demo with data from our database.</h3>
-          </div>
-          <div class="content-bottom">
-            <ul>
-              <li><a id="cyclecoin-test"><button class="btn btn-primary">Test Cyclecoin acquisition</button></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xs-12">
+      <div class="col-md-6 col-xs-12 det_tiles">
         <div class="content">
           <div class="content-top">
             <i class="fa caret-right" aria-hidden="true"></i>
             <h1>Authentication with Uport</h1>
           </div>
           <div class="content-bottom">
+            <img src="../assets/img/users.svg" class="img-responsive det_image">
             <h3>We secured the crucial operations in the system using UPort to validate identity of users.</h3>
-          </div>
-          <div class="content-bottom">
             <ul>
               <li><a id="uport-test"><button class="btn btn-primary">Test UPort Authentication</button></a></li>
             </ul>
@@ -157,7 +155,7 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-xs-12">
+      <div class="col-md-6 col-xs-12 det_tiles">
         <div class="content">
           <div class="content-top">
             <i class="fa caret-right" aria-hidden="true"></i>
@@ -165,17 +163,15 @@
           </div>
           <div class="content-bottom">
             <h3>We integrate IBM technologies aiming to reduce the language barriers.</h3>
-          </div>
-          <div class="content-bottom">
+            <img src="../assets/img/talk.svg" class="img-responsive det_image">
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
   <div class="container details">
-    <div class="row">
+    <div class="row why_cycle">
       <div class="page-header">
         <h1>Why Cycle?</h1>
         <i class="fa fa-globe" aria-hidden="true"></i>
