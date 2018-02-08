@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('../fonts/Yantramanav-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*===================== HOMEOWNER NAVBAR========================== */
 
 .navbar-brand {
@@ -10,6 +17,7 @@
   font-weight: lighter;
   text-decoration: none;
 }
+
 .home {
   font-weight: lighter;
 }
@@ -51,4 +59,54 @@
 
 .right span {
   font-weight: lighter;
+}
+
+/* UTILITY COMPANY DETAILS STYLING */
+
+.page-header {
+  text-align: center;
+  border: none;
+}
+
+.page-header h1 {
+  font-size: 1.4em;
+  color: #42496C;
+  font-family: 'Yantramanav';
+}
+
+.page-header h2 {
+  font-family: 'Open Sans', serif;
+  font-size: 1.1em;
+  margin: 1em;
+}
+
+.homes_cnt {
+  color: #DFA400;
+}
+
+.page-header .homes_cnt i {
+  padding: 2px;
+  border: 2px solid #DFA400;
+  border-radius: 50%;
+  color: #DFA400;
+}
+
+.page-header .active_cnt {
+  color: #54936F;
+}
+
+.imgur {
+  height:200px;
+  width:90%;
+}
+
+.page-header .active_cnt i {
+  padding: 2px;
+  border: 2px solid #54936F;
+  border-radius: 50%;
+  color: #54936F;
+}
+
+.col-sm-3 i{
+  background: yellow;
 }
