@@ -225,7 +225,7 @@ ul li {
 }
 
 .tagline h1 {
-  font-size: 28px;
+  font-size: 1.7em;
   font-weight: 600;
   text-align: center;
   font-family: 'Eiona';
@@ -292,7 +292,7 @@ ul li {
 .prefoot .content .content-bottom h3 {
   text-align: center;
   font-family: 'Eiona';
-  font-weight: 400;
+  font-weight:normal;
   font-size: 1.2em;
 
 }
@@ -344,11 +344,13 @@ ul li {
 .why_cycle .page-header {
   border: none;
   text-align: center;
+  margin:2em;
 }
 
 .why_cycle  .page-header h1 {
-  font-family: 'Open Sans', sans-serif;
-  color: #6964FF;
+  font-family: 'Eiona';
+  font-weight: bolder;
+  color: #360099;
   font-size: 3em;
 }
 
@@ -362,14 +364,29 @@ ul li {
   font-weight: bold;
   font-size: 1.3em;
   line-height: 1.6em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Eiona';
 }
+
+.why_cycle  .page-content h3 span{
+  color: #360099;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  font-family: 'Eiona';
+}
+
+
 
 .why_cycle  .page-content {
   margin: 2em;
   text-align: center;
 }
 
+.why_image {
+  height:130px;
+  width:auto;
+  margin: auto;
+}
 /* END OF DETAILS */
 
 /* FOOTER */
