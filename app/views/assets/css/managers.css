@@ -391,10 +391,18 @@ hr {
   text-align: left;
 }
 
+
 .tile_cont {
+  transition: .5s;
   font-family: 'Open Sans', serif;
-  margin: 1em;
   /* border: 1px solid yellow; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.tile_cont:hover {
+  box-shadow: 0 3px 6px rgba(223, 164, 0, 0.16), 0 3px 6px rgba(223, 164, 0, 0.23);
+  cursor: pointer;
+  transition: .5s;
 }
 
 .bottom {
