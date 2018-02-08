@@ -10,6 +10,8 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/slick-theme.css">
   <link href="../assets/css/managers.css" rel="stylesheet">
   <link href="../assets/css/managers_nav.css" rel="stylesheet">
 </head>
@@ -25,14 +27,15 @@
           </p>
         </div>
         <ul class="nav navbar-nav">
-          <li data-toggle="pill" href="#grids"><a href="#">Grids</a></li>
+          <li data-toggle="pill" href="#grids"><a href="#" class>Grids</a></li>
           <li data-toggle="pill" href="#homes"><a href="#">Homes</a></li>
           <li data-toggle="pill" href="#companies"><a href="#">Utility Companies</a></li>
           <li data-toggle="pill" href="#locations"><a href="#">Locations</a></li>
           <li data-toggle="pill" href="#energy"><a href="#">Energy</a></li>
         </ul>
         <div class="navbar-brand right">
-          <b>ADMIN / </b> Dave /  <a href="/index.html"><span class="home">Back</span></a></h4></li>
+          <b>ADMIN / </b> Dave / <a href="/index.html"><span class="home">Back</span></a></h4>
+          </li>
         </div>
       </div>
     </nav>
@@ -98,34 +101,42 @@
       </div>
       <div class="container">
         <div class='row'>
-          <div class='col-md-12 carou'>
-            <div class="carousel slide media-carousel" id="media">
-              <div class="carousel-inner">
-                <div class="item  active">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                    </div>
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                    </div>
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                    </div>
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 8.png"></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-md-4">
-                    <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                  </div>
-                </div>
+          <div class="your-class">
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 1.jpg" class="img-responsive slider_img" alt="">
+                <p>BUTA</p>
               </div>
-              <a data-slide="prev" href="#media" class="left carousel-control">
-                <</a>
-                  <a data-slide="next" href="#media" class="right carousel-control">></a>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 2.jpg" class="img-responsive slider_img" alt="">
+                <p>KIBALE</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 3.jpg" class="img-responsive slider_img" alt="">
+                <p>KIBERA</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 4.jpg" class="img-responsive slider_img" alt="">
+                <p>BOGOTA</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 2.jpg" class="img-responsive slider_img" alt="">
+                <p>DELHI</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 5.jpg" class="img-responsive slider_img" alt="">
+                <p>TURKANA</p>
+              </div>
             </div>
           </div>
         </div>
@@ -170,6 +181,8 @@
         </div>
       </div>
     </div>
+
+
 
     <!-- COMPANIES -->
 
@@ -316,14 +329,34 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="../assets/js/slick.js"></script>
   <script type="text/javascript">
+    $(document).ready(function() {
+      $('.your-class').slick({
+        infinite: false,
+        slidesToShow: 4,
+        arrows: true,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true
+          }
+        }]
+      });
+    });
+  </script>
+  <!-- <script type="text/javascript">
     $(document).ready(function() {
       $('#media').carousel({
         pause: true,
         interval: false,
       });
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
