@@ -1,178 +1,177 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-body{
+body {
   background-color: white;
-  height:100vh;
+  height: 100vh;
   font-family: 'Open Sans', serif;
   overflow-x: hidden;
 }
 
 /*===================== HOMEOWNER NAVBAR========================== */
-.navbar-brand{
+
+.navbar-brand {
   font-weight: bold;
 }
-.home{
+
+.home {
   color: white;
   text-decoration: underline;
 }
 
-.owner-img{
-  height:50px;
-  width:50px;
+.owner-img {
+  height: 50px;
+  width: 50px;
 }
-.top{
+
+.top {
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/managers-0.jpg')no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
--webkit-filter: contrast(90%);
-  height:auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(90%);
+  height: auto;
   /* border:2px solid blue; */
-  color:white;
+  color: white;
   margin-bottom: 4em;
 }
-.nav{
+
+.nav {
   height: auto;
-  margin:1em;
+  margin: 1em;
   /* border:2px solid red; */
 }
-.nav ul li{
+
+.nav ul li {
   display: inline-block;
   margin-left: 0.5em;
 }
-.right{
+
+.right {
   margin-right: 2em;
-  float:right;
+  float: right;
 }
-.right span{
+
+.right span {
   font-weight: 900;
 }
 
 /*================== HOMEOWNER STATS======================= */
 
-
-.main{
+.main {
   margin-top: 8em;
   margin-bottom: 4em;
 }
 
-.stats{
+.stats {
   height: 70vh;
 }
 
-.bar{
-  width:90%;
-  margin-top:1em;
+.bar {
+  width: 90%;
+  margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom:1em;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  margin-bottom: 1em;
+  border-radius: 3em;
 }
 
-.bar-text{
+.bar-text {
   text-align: center;
-  color:green;
+  color: green;
   background-color: #fff2e6;
-  width:90%;
-  padding:10px;
-  margin-top:1em;
+  width: 90%;
+  padding: 10px;
+  margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom:1em;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  margin-bottom: 1em;
+  border-radius: 3em;
   font-size: 1.2em;
 }
 
-.well{
-  color:green;
+.well {
+  color: green;
   font-size: 1.2em;
   text-align: center;
   background-color: #ecf9f2;
 }
 
-.sample-image{
+.sample-image {
   background-image: url(https://images.homedepot-static.com/productImages/2734b49c-6daa-47e1-84c4-42e40bf24c26/svn/newtechwood-tile-samples-us-qd-zx-ok-s-64_400_compressed.jpg);
   background-size: cover;
-  padding:20px;
-  height:10vh;
+  padding: 20px;
+  height: 10vh;
 }
 
-.map{
+.map {
   margin-top: 2em;
-  height:30vh;
+  height: 30vh;
   background-repeat: no-repeat;
   background-image: url(https://unifaceinfo.com/wp-content/uploads/2014/01/u96_htmlwidget_preview.png);
   background-size: cover;
 }
 
-
-.tile-top ul li{
+.tile-top ul li {
   color: #00334d;
   display: inline-block;
-  margin-top:0.6em;
+  margin-top: 0.6em;
 }
 
-.progress{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius:20px;
-  border-bottom-right-radius:20px;
+.progress {
+  border-radius: 1em;
   width: 70%;
-  margin:auto;
-}
-.progress-bar{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius:20px;
-  border-bottom-right-radius:20px;
+  margin: auto;
 }
 
-.filter-btns{
+.progress-bar {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.filter-btns {
   text-align: center;
 }
-.filter-btns .btn-default{
-  border:1.8px solid #00334d;
+
+.filter-btns .btn-default {
+  border: 1.8px solid #00334d;
   transition: .4s;
   letter-spacing: 1px;
-  margin-left:1em;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius:20px;
-  border-bottom-right-radius:20px;
-  font-size:10px;
+  margin-left: 1em;
+  border-radius: 2em;
+  font-size: 10px;
 }
 
-.btn-default:hover{
+.btn-default:hover {
   background-color: #00334d;
-  color:white;
+  color: white;
   transition: .4s;
 }
-.tile-body{
+
+.tile-body {
   background-color: #f2f2f2;
   min-height: 250px;
 }
-.details-box{
-}
-.ct-square{
-  height:200px;
-  width:100%;
-}
-.tile-body h5{
-  text-align: center;
-}
-.box{
-  border-radius:30px;
-  background-color: #f2f2f2;
-  max-height:65vh;
+
+.details-box {}
+
+.ct-square {
+  height: 200px;
+  width: 100%;
 }
 
-.graph{
-  height:200px;
-  width:100%;
+.tile-body h5 {
+  text-align: center;
+}
+
+.box {
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  max-height: 65vh;
+}
+
+.graph {
+  height: 200px;
+  width: 100%;
 }
