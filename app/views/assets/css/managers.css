@@ -342,7 +342,7 @@ hr {
 /* COMPANIES PANEL STYLING====================================================== */
 
 #companies {
-  margin-bottom: 5em;
+  margin-bottom: 8em;
 }
 
 #companies .page-header h1 {
@@ -432,6 +432,9 @@ hr {
   margin: auto;
 }
 
+.tab-content {
+  margin-bottom: 3em;
+}
 /* LOCATIONS */
 
 #locations .page-header {
