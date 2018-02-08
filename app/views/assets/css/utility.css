@@ -12,14 +12,14 @@
   font-weight: bold;
 }
 
-.home {
-  color: red;
+.right a {
+  color: white;
   font-weight: lighter;
   text-decoration: none;
 }
 
-.home {
-  font-weight: lighter;
+.right span {
+  font-weight: bolder;
 }
 
 .owner-img {
@@ -58,7 +58,7 @@
 }
 
 .right span {
-  font-weight: lighter;
+  font-weight: bolder;
 }
 
 /* UTILITY COMPANY DETAILS STYLING */
@@ -95,10 +95,6 @@
   color: #54936F;
 }
 
-.imgur {
-  height:200px;
-  width:90%;
-}
 
 .page-header .active_cnt i {
   padding: 2px;
@@ -107,6 +103,28 @@
   color: #54936F;
 }
 
-.col-sm-3 i{
-  background: yellow;
+
+/* CONTENT RIGHT */
+.wallet {
+  font-family: 'Yantramanav';
+  text-align: center;
+  padding-top:0.6em;
+  padding-bottom:0.6em;
+  background-color: #CADED2;
+  border: 0;
+  color: green;
+  max-width: 50%;
+  outline: none;
+  border-radius: 3em;
+  margin: auto;
+}
+.wallet span {
+  color:#00334d;
+}
+
+.map {
+  margin-top:1em;
+}
+.map_img {
+  border-radius: 10%;
 }

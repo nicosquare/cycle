@@ -537,16 +537,14 @@ hr {
 .top_grids {
   width: 35%;
   margin: auto;
+  padding-bottom: 1em;
   height: 200px;
   overflow-y: scroll;
   background: #f2f2f2;
   color: #DFA400;
   font-family: 'Yantramanav';
   font-size: 1.2em;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 2em;
 }
 
 /* ::-webkit-scrollbar{} */
@@ -581,7 +579,7 @@ hr {
 }
 
 .slider_tile {
-  padding:1em;
+  padding: 1em;
 }
 
 .slider_tile:focus {
