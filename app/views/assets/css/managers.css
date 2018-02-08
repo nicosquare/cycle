@@ -435,6 +435,7 @@ hr {
 .tab-content {
   margin-bottom: 3em;
 }
+
 /* LOCATIONS */
 
 #locations .page-header {
@@ -469,11 +470,12 @@ hr {
 
 #locations .loc_img {
   height: 400px;
-  width:800px;
+  width: 800px;
   margin: auto;
   border-radius: 2em;
 }
-#locations{
+
+#locations {
   margin-bottom: 2em;
 }
 
@@ -488,7 +490,6 @@ hr {
   font-size: 1.4em;
   color: #42496C;
   font-family: 'Yantramanav';
-
 }
 
 #energy .page-header h1 {
@@ -547,14 +548,16 @@ hr {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+
 /* ::-webkit-scrollbar{} */
 
 .price {
-  margin-top:2em;
+  margin-top: 2em;
 }
-.price h4{
+
+.price h4 {
   text-align: center;
-  font-family: 'Open Sans',serif;
+  font-family: 'Open Sans', serif;
 }
 
 .price i {
@@ -564,64 +567,42 @@ hr {
 #energy {
   margin-bottom: 4em;
 }
+
 /* CAROUSEL SLIDER */
 
-/* carousel */
+.slick-prev:before, .slick-next:before {
+  color: orange;
+}
 
-.media-carousel {
+.your-class {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.slider_tile {
+  padding:1em;
+}
+
+.slider_tile:focus {
+  outline: none;
+}
+
+.slider_img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #DFA400;
+  border-radius: 50%;
   margin: auto;
 }
 
-/* Previous button  */
-
-.media-carousel .carousel-control.left {
-  left: -12px;
-  height: 60px;
-  font-size: 3em;
-  width: 50px;
-  margin-top: 30px;
-  background: none;
-  color: #ff751a;
+.slide_content {
+  text-align: center;
 }
 
-/* Next button  */
-
-.media-carousel .carousel-control.right {
-  right: -12px !important;
-  height: 40px;
-  width: 40px;
-  font-size: 3em;
-  margin-top: 30px;
-  background: none;
-  color: #ff751a;
+.slide_content p {
+  color: #DFA400;
+  font-size: 1.2em;
+  font-family: 'Open Sans', serif;
+  margin: 1em;
 }
-
-#media a {
-  color: #ff751a;
-}
-
-/* Changes the position of the indicators */
-
-.media-carousel .carousel-indicators {
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}
-
-/* Changes the colour of the indicators */
-
-.media-carousel .carousel-indicators li {}
-
-.media-carousel .carousel-indicators .active {}
-
-.media-carousel img {
-  height: 120px;
-  width: 200px;
-}
-
-.thumbnail {
-  border: none;
-}
-
-/* End carousel */
