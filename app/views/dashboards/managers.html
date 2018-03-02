@@ -10,139 +10,353 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/slick-theme.css">
   <link href="../assets/css/managers.css" rel="stylesheet">
+  <link href="../assets/css/managers_nav.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- NAVBAR -->
-  <div class="row top">
-    <!-- <img src="../assets/img/image.png"class="img-responsive place" alt=""> -->
-    <div class="nav">
-      <ul class="other">
-        <!-- <li class="left">Team Dashboard</li> -->
-        <li class="active"><a data-toggle="pill" href="#grids" class="btn btn-default"></a></li>
+  <div class="row nave">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <p class="navbar-brand">
+            TEAM DASHBOARD
+          </p>
+        </div>
+        <ul class="nav navbar-nav">
+          <li data-toggle="pill" href="#grids"><a href="#" class>Grids</a></li>
+          <li data-toggle="pill" href="#homes"><a href="#">Homes</a></li>
+          <li data-toggle="pill" href="#companies"><a href="#">Utility Companies</a></li>
+          <li data-toggle="pill" href="#locations"><a href="#">Locations</a></li>
+          <li data-toggle="pill" href="#energy"><a href="#">Energy</a></li>
+        </ul>
+        <div class="navbar-brand right">
+          <b>ADMIN / </b> Dave / <a href="/index.html"><span class="home">Back</span></a></h4>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <ul>
+      <li class="left">Team Dashboard</li>
+      <div class="btn-group center">
+        <a data-toggle="pill" href="#grids" class="toggles">Grids</a>
+        <a data-toggle="pill" href="#homes" class="toggles">Homes</a>
+        <a data-toggle="pill" href="#companies" class="toggles">Companies</a>
+        <a data-toggle="pill" href="#locations" class="toggles">Locations</a>
+        <a data-toggle="pill" href="#energy" class="toggles">Energy</a>
+      </div>
+      <li class="right"><a href="/index.html">Back</a></li>
+      <li class="right">Admin / Dave</li>
+    </ul> -->
+  </div>
+
+
+
+
+  <!-- NAVBAR -->
+  <!-- <div class="row top"> -->
+  <!-- <img src="../assets/img/image.png"class="img-responsive place" alt=""> -->
+  <!-- <div class="nav">
+      <ul class="other"> -->
+  <!-- <li class="left">Team Dashboard</li> -->
+  <!-- <li class="active"><a data-toggle="pill" href="#grids" class="btn btn-default"></a></li>
         <li><a data-toggle="pill" href="#homes" class="btn btn-default"></a></li>
         <li><a data-toggle="pill" href="#companies" class="btn btn-default"></a></li>
         <li><a data-toggle="pill" href="#locations" class="btn btn-default"></a></li>
-        <li><a data-toggle="pill" href="#energy" class="btn btn-default"></a></li>
-        <!-- <li class="right">Owner / Owner-name</li> -->
-      </ul>
+        <li><a data-toggle="pill" href="#energy" class="btn btn-default"></a></li> -->
+  <!-- <li class="right">Owner / Owner-name</li> -->
+  <!-- </ul>
     </div>
-  </div>
+  </div> -->
+
 
 
   <!-- DASHBOARD BODY -->
 
   <div class="tab-content">
+    <!-- GRIDS -->
     <div id="grids" class="container tab-pane fade in active">
       <div class="page-header">
-        <img src="../assets/img/Asset 3.png" class="grid-img img-responsive" alt="">
+        <h1>GRIDS</h1>
       </div>
       <div class="filters">
-        <img class="filter-img img-responsive " src="../assets/img/Asset 4.png" alt="">
+        <h2>Filter By</h2>
+        <hr>
+        <ul>
+          <li>Location</li>
+          <li>Energy Output</li>
+          <li>Consumption</li>
+        </ul>
+        <!-- <img class="filter-img img-responsive " src="../assets/img/Asset 4.png" alt=""> -->
         <!-- <ul class="filter">
           <li>Location</li>
           <li>Energy output</li>
           <li>Energy Consumed</li>
         </ul> -->
-        <img src="../assets/img/Asset 5.png" class="img-responsive opts-img" alt="">
+        <!-- <img src="../assets/img/Asset 5.png" class="img-responsive opts-img" alt=""> -->
       </div>
       <div class="container">
         <div class='row'>
-          <div class='col-md-12 carou'>
-            <div class="carousel slide media-carousel" id="media">
-              <div class="carousel-inner">
-                <div class="item  active">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                    </div>
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                    </div>
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                    </div>
-                    <div class="col-md-3">
-                      <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 8.png"></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="col-md-4">
-                    <a class="thumbnail" href="#"><img alt="" src="../assets/img/Asset 6.png"></a>
-                  </div>
-                </div>
+          <div class="your-class">
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 1.jpg" class="img-responsive slider_img" alt="">
+                <p>BUTA</p>
               </div>
-              <a data-slide="prev" href="#media" class="left carousel-control">
-                <</a>
-                  <a data-slide="next" href="#media" class="right carousel-control">></a>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 2.jpg" class="img-responsive slider_img" alt="">
+                <p>KIBALE</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 3.jpg" class="img-responsive slider_img" alt="">
+                <p>KIBERA</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 4.jpg" class="img-responsive slider_img" alt="">
+                <p>BOGOTA</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 2.jpg" class="img-responsive slider_img" alt="">
+                <p>DELHI</p>
+              </div>
+            </div>
+            <div class="slider_tile">
+              <div class="slide_content">
+                <img src="../assets/img/HOUSE 5.jpg" class="img-responsive slider_img" alt="">
+                <p>TURKANA</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- HOMES PANEL -->
+
     <div id="homes" class="tab-pane fade">
       <div class="container">
         <div class="row">
-          <img src="../assets/img/Asset 12.png" class="img-responsive home-img" alt="">
+          <div class="page-header" style="border:none">
+            <h1>HOMES</h1>
+            <h2><span class="homes_cnt"><i class="fa fa-home" aria-hidden="true"></i> 45 Homes &nbsp&nbsp&nbsp&nbsp</span> / &nbsp&nbsp <span class="active_cnt"><i class="fa fa-power-off" aria-hidden="true"></i>
+ 44 Active</span></h2>
+            <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+          </div>
+          <!--
+          <div class="row testing">
+            <ul class="test">
+              <li><img src="../assets/img/300 PX 1.png" class="img-responsive img-circle table-img" alt=""></li>
+              <li class="testm">NAME</li>
+              <li class="test2">OWNERR</li>
+              <li class="testm">NAME</li>
+              <li class="test2">OWNERR</li>
+              <li class="test2">OWNERR</li>
+            </ul>
+          </div> -->
+          <!-- <div class="row content"> -->
+          <!-- <div class="col-md-3 col-xs-4 image">
+              <img src="../assets/img/300 PX 1.png" class="img-responsive img-circle table-img" alt="">
+            </div>
+            <div class="col-md-3 col-xs-4 name">
+              <h3>NAME</h3>
+            </div>
+            <div class="col-md-3 col-xs-4 detail">
+              <h3>PERSON</h3>
+            </div> -->
+          <!-- </div> -->
+          <!-- <img src="../assets/img/Asset 12.png" class="img-responsive home-img" alt=""> -->
           <img src="../assets/img/Asset 13.png" class="img-responsive homes-img" alt="">
         </div>
       </div>
     </div>
+
+
+
+    <!-- COMPANIES -->
+
     <div id="companies" class="tab-pane fade">
       <div class="container">
-        <div class="row">
-          <img src="../assets/img/Asset 15.png" class="img-responsive home-img" alt="">
-          <div class="col-md-12">
-            <div class="col-md-3">
-              <img src="../assets/img/Asset 16.png" class="img-responsive homes-img" alt="">
+        <div class="row comp_tiles">
+          <div class="page-header">
+            <h1>UTILITY COMPANIES</h1>
+            <h2><i class="fa fa-home" aria-hidden="true"></i> 4 Companies</h2>
+          </div>
+          <!-- <img src="" class="img-responsive home-img" alt=""> -->
+          <div class="row">
+            <div class="col-md-3 col-xs-12 tile_main">
+              <div class="tile_cont">
+                <div class="tile_top">
+                  <h1>TESLA</h1>
+                  <img src="../assets/img/300 PX 3.png" class="img-responsive tile_img" alt="">
+                </div>
+                <div class="bottom">
+                  <ul>
+                    <li><span class="labels">Grid: </span> 263512312123</li>
+                    <li><span class="labels">Location: </span> New Delhi</li>
+                    <li><span class="labels">Homes: </span> 25</li>
+                    <li><span class="labels">Complains: </span> Less</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-md-3">
-              <img src="../assets/img/Asset 17.png" class="img-responsive homes-img" alt="">
+            <div class="col-md-3 col-xs-12 tile_main">
+              <div class="tile_cont">
+                <div class="tile_top">
+                  <h1>CYCLE</h1>
+                  <img src="../assets/img/cycle_logo-s.png" class="img-responsive tile_img" alt="">
+                </div>
+                <div class="bottom">
+                  <ul>
+                    <li><span class="labels">Grid: </span> 263512312123</li>
+                    <li><span class="labels">Location: </span> Bogota</li>
+                    <li><span class="labels">Homes: </span> 25</li>
+                    <li><span class="labels">Complains: </span> Less</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-md-3">
-              <img src="../assets/img/Asset 18.png" class="img-responsive homes-img" alt="">
+            <div class="col-md-3 col-xs-12 tile_main">
+              <div class="tile_cont">
+                <div class="tile_top">
+                  <h1>FARADAY</h1>
+                  <img src="../assets/img/300 PX 2.png" class="img-responsive tile_img" alt="">
+                </div>
+                <div class="bottom">
+                  <ul>
+                    <li><span class="labels">Grid: </span> 263512312123</li>
+                    <li><span class="labels">Location: </span> Nairobi</li>
+                    <li><span class="labels">Homes: </span> 25</li>
+                    <li><span class="labels">Complains: </span> Less</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="col-md-3">
-              <img src="../assets/img/Asset 19.png" class="img-responsive homes-img" alt="">
+            <div class="col-md-3 col-xs-12 tile_main">
+              <div class="tile_cont">
+                <div class="tile_top">
+                  <h1>E-MOUNTAIN</h1>
+                  <img src="../assets/img/300 PX 1.png" class="img-responsive tile_img" alt="">
+                </div>
+                <div class="bottom">
+                  <ul>
+                    <li><span class="labels">Grid: </span> 263512312123</li>
+                    <li><span class="labels">Location: </span> Texas</li>
+                    <li><span class="labels">Homes: </span> 25</li>
+                    <li><span class="labels">Complains: </span> Less</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- LOCATIONS -->
+
     <div id="locations" class="tab-pane fade">
       <div class="container">
         <div class="row">
-          <img src="../assets/img/Asset 21.png" class="img-responsive locations-img" alt="">
+          <div class="page-header" style="border:none">
+            <h1>LOCATIONS</h1>
+            <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
+          </div>
+          <div class="loc_map">
+            <img src="../assets/img/map_img.jpg" class="img-responsive loc_img" alt="">
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- ENERGY -->
+
     <div id="energy" class="tab-pane fade">
       <div class="container">
         <div class="row">
+          <div class="page-header" style="border:none">
+            <h1>ENERGY</h1>
+            <table>
+              <tr>
+                <td valign="top"><img src="../assets/img/cycle_logo-s.png" class="log_img"></td>
+                <td valign="middle"><span class="en-p"><i class="fa fa-bolt"></i>&nbsp116162 kW-h PRODUCED</span></td> <br>
+                <td valign="middle"><span class="en-c"><i class="fa fa-bolt"></i>&nbsp 15123 kW-h CONSUMED</span> </td>
+              </tr>
+            </table>
+            <br>
+            <h3><i class="fa fa-bolt"></i> 31232 kW-h TRANSFERRED</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="list">
+            <ol class="top_grids">
+              <h1>TOP GRIDS</h1>
+              <li>CYCLE</li>
+              <li>ENERGY MOUNTAIN</li>
+              <li>UG ELECTRIC</li>
+              <li>ENERGETIC</li>
+              <li>FARADAY</li>
+              <li>FUTURAMA</li>
+              <li>UG ELECTRIC</li>
+              <li>ENERGETIC</li>
+              <li>FARADAY</li>
+              <li>FUTURAMA</li>
+            </ol>
+          </div>
+          <div class="price">
+            <h4><b>Token Price: </b><i>6789 $</i> </h4>
+          </div>
+        </div>
+        <!-- <div>
           <img src="../assets/img/Asset 23.png" class="img-responsive home-img" alt="">
           <img src="../assets/img/Asset 24.png" class="img-responsive homes-img" alt="">
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
-
-
-
-
   </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="../assets/js/slick.js"></script>
   <script type="text/javascript">
+    $(document).ready(function() {
+      $('.your-class').slick({
+        infinite: false,
+        slidesToShow: 4,
+        arrows: true,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true
+          }
+        }]
+      });
+    });
+  </script>
+  <!-- <script type="text/javascript">
     $(document).ready(function() {
       $('#media').carousel({
         pause: true,
         interval: false,
       });
     });
-  </script>
+  </script> -->
 </body>
 
 </html>

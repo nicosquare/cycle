@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('../fonts/Yantramanav-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -5,13 +13,57 @@ body {
 .top {
   height: 100px;
   width: 100%;
-  margin: 0;
-  background-image: url(../img/image.png);
   /* border:2px solid blue; */
+  margin: 0;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/managers-0.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  -webkit-filter: contrast(90%);
   color: white;
 }
 
+.top ul {
+  border: 1px solid red;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.top ul li {
+  float: left;
+  list-style: none;
+}
+
+.top .right {
+  float: right;
+}
+
+.top .left {
+  float: left;
+}
+
+.top .center {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+}
+
+.top .center button {
+  color: black;
+  margin-left: 1.3em;
+}
+
+/*
 .place {
   width: 100%;
   height: 90px;
@@ -22,6 +74,7 @@ body {
   margin-top: 1em;
   margin-bottom: 1em;
   /* border:2px solid red; */
+
 }
 
 .nav ul li {
@@ -34,11 +87,11 @@ ul li a {
   text-decoration: none;
 }
 
-.btn-default {
+*/ .btn-default {
   background: transparent;
-  width:8em;
-  border:none;
-  padding:30px;
+  width: 8em;
+  border: none;
+  padding: 30px;
   /* border: 1px solid grey;
   transition: .4s;
   letter-spacing: 1px;
@@ -48,18 +101,19 @@ ul li a {
   border-bottom-right-radius: 20px; */
 }
 
-.btn-default:hover{
+.btn-default:hover {
   border-top: 2px solid white;
   background: none;
 }
 
-.btn-default:focus{
+.btn-default:focus {
   background: none;
 }
 
-.btn-default:visited{
+.btn-default:visited {
   background: none;
 }
+
 #grids .page-header {
   border: none;
   color: grey;
@@ -71,11 +125,6 @@ hr {
   width: 50%;
   color: black;
   margin: auto;
-}
-
-.filters {
-  margin-bottom: 5em;
-  text-align: center;
 }
 
 .filter-img {
@@ -95,24 +144,23 @@ hr {
   height: 30px;
 }
 
-.home-img{
+.home-img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5em;
   height: 200px;
-
 }
 
-.homes-img{
+.homes-img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5em;
   height: 350px;
-  margin-bottom:3em;
+  margin-bottom: 3em;
 }
 
-.locations-img{
-  height:500px;
+.locations-img {
+  height: 500px;
   margin-top: 3em;
   margin-right: auto;
   margin-left: auto;
@@ -130,67 +178,437 @@ ul.filter li {
   margin-left: 18em;
 }
 
-#companies{
-  margin-bottom: 5em;
+/* GRIDS PANEL STYLING===================================================== */
+
+#grids .page-header h1 {
+  /* border: 1px solid red; */
+  margin-top: 1.2em;
+  font-family: 'Yantramanav';
+  color: #5C5A5F;
+  letter-spacing: 0.1em;
+  font-size: 3em;
 }
-/* CAROUSEL SLIDER */
 
-/* carousel */
+.filters {
+  text-align: center;
+}
 
-.media-carousel {
+.filters h2 {
+  font-family: 'Yantramanav';
+  color: #A5445D;
+  margin-bottom: 0.5em;
+}
+
+.filters ul {
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+  margin: auto;
+  color: black;
+  border-width: 2px;
+}
+
+.filters ul li {
+  display: inline;
+  margin: 2em;
+  font-size: 1.3em;
+  font-family: 'Yantramanav';
+  color: grey;
+}
+
+/* HOMES PANEL========================================= */
+
+#homes .page-header {
+  text-align: center;
+  margin-top: 1em;
+}
+
+#homes .page-header h1 {
+  font-size: 5em;
+  color: #5C5A5F;
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  font-family: 'Yantramanav';
+  font-weight: 300;
+}
+
+#homes h2 {
+  font-family: 'Open Sans', serif;
+  font-size: 1.6em;
+  margin: 1em;
+}
+
+#homes h2 .homes_cnt {
+  color: #DFA400;
+}
+
+#homes h2 .homes_cnt i {
+  padding: 2px;
+  border: 2px solid #DFA400;
+  border-radius: 50%;
+  color: #DFA400;
+}
+
+#homes h2 .active_cnt {
+  color: #54936F;
+}
+
+#homes h2 .active_cnt i {
+  padding: 2px;
+  border: 2px solid #54936F;
+  border-radius: 50%;
+  color: #54936F;
+}
+
+#homes input {
+  padding: 0.5em;
+  border: 0px solid red;
+  background-color: #f2f2f2;
+  color: black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 58%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#homes input:focus {
+  outline: none;
+  background-color: white;
+  border-bottom: 0.8px solid #d9d9d9;
+}
+
+/*
+#homes .table {
+  width: 60%;
+  margin:auto;
+  border: none !important;
+}
+
+#homes .content {
+  border: 2px solid red;
+  width: 70%;
+  height:30px;
   margin: auto;
 }
+.testing{
+  width:80%;
+  text-align: center;
+  margin: auto;
+  border: 1px solid yellow;
 
-/* Previous button  */
+}
+.test{
+  border: 1px solid yellow;
+  height: 45px;
+  width:90%;
+}
+.test li {
+  float: left;
+  list-style: none;
+}
+.test .testm, .test2 {
+  border: 1px solid blue;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.image {
+  border: 1px solid blue;
+}
+.name .detail {
+  /* border: 1px solid yellow; */
 
-.media-carousel .carousel-control.left {
-  left: -12px;
-  height: 60px;
-  font-size: 3em;
-  width: 50px;
-  margin-top: 30px;
-  background: none;
-  color: #ff751a;
 }
 
-/* Next button  */
-
-.media-carousel .carousel-control.right {
-  right: -12px !important;
-  height: 40px;
-  width: 40px;
-  font-size: 3em;
-  margin-top: 30px;
-  background: none;
-  color: #ff751a;
+.name .detail h3 {
+  margin-top: auto;
 }
 
-#media a {
-  color: #ff751a;
+.table-img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid orange;
 }
 
-/* Changes the position of the indicators */
-
-.media-carousel .carousel-indicators {
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
+.table-r {
+  height: 30px;
+  border: 2px solid red;
 }
 
-/* Changes the colour of the indicators */
+*/
+/* COMPANIES PANEL STYLING====================================================== */
 
-.media-carousel .carousel-indicators li {}
-
-.media-carousel .carousel-indicators .active {}
-
-.media-carousel img {
-  height: 120px;
-  width: 200px;
+#companies {
+  margin-bottom: 8em;
 }
 
-.thumbnail {
+#companies .page-header h1 {
+  font-size: 4em;
+  color: #5C5A5F;
+  padding: 0.3em;
+  font-family: 'Yantramanav';
+  font-weight: 300;
+}
+
+#companies .page-header {
+  margin-top: 1em;
+  text-align: center;
   border: none;
 }
 
-/* End carousel */
+#companies .page-header h2 {
+  margin: 0.5em;
+  padding: 2px;
+  font-size: 1.5em;
+  color: #DFA400;
+  font-family: 'Open Sans', serif;
+}
+
+#companies .page-header i {
+  color: #DFA400;
+  border: 2px solid #DFA400;
+  border-radius: 50%;
+}
+
+#companies .homes-img {
+  border-radius: 50%;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.tile_top h1 {
+  /* border: 1px solid green; */
+  font-size: 1.4em;
+  margin: 1em;
+  color: #DFA400;
+}
+
+.tile_main {
+  /* border: 1px solid red; */
+  text-align: left;
+}
+
+
+.tile_cont {
+  transition: .5s;
+  font-family: 'Open Sans', serif;
+  /* border: 1px solid yellow; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.tile_cont:hover {
+  box-shadow: 0 3px 6px rgba(223, 164, 0, 0.16), 0 3px 6px rgba(223, 164, 0, 0.23);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.bottom {
+  margin: 1em;
+  /* border: 1px solid pink; */
+}
+
+.tile_img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  padding: 1em;
+}
+
+.bottom ul {
+  margin-left: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom ul li {
+  color: #5C5A5F;
+  width: 100%;
+  font-size: 1.1em;
+  margin: 0.4em;
+}
+
+.bottom .labels {
+  color: black;
+}
+
+.comp_tiles {
+  width: 90%;
+  margin: auto;
+}
+
+.tab-content {
+  margin-bottom: 3em;
+}
+
+/* LOCATIONS */
+
+#locations .page-header {
+  text-align: center;
+}
+
+#locations .page-header h1 {
+  font-size: 4em;
+  color: #5C5A5F;
+  padding: 0.3em;
+  font-family: 'Yantramanav';
+  font-weight: 300;
+}
+
+#locations input {
+  padding: 0.5em;
+  border: 0px solid red;
+  background-color: #f2f2f2;
+  color: black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 30%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#locations input:focus {
+  outline: none;
+  background-color: white;
+  border-bottom: 0.8px solid #d9d9d9;
+}
+
+#locations .loc_img {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  border-radius: 2em;
+}
+
+#locations {
+  margin-bottom: 2em;
+}
+
+/* ENERGY ========================*/
+
+#energy .page-header {
+  font-family: 'Yantramanav';
+  text-align: center;
+}
+
+#energy .page-header h3 {
+  font-size: 1.4em;
+  color: #42496C;
+  font-family: 'Yantramanav';
+}
+
+#energy .page-header h1 {
+  font-size: 4em;
+  color: #5C5A5F;
+  padding: 0.3em;
+  font-family: 'Yantramanav';
+  font-weight: 300;
+}
+
+#energy table {
+  text-align: center;
+  margin: auto;
+}
+
+.log_img {
+  height: 100px;
+  width: 100px;
+}
+
+.en-p {
+  color: #DFA400;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+.en-c {
+  font-size: 1.2em;
+  color: #54936F;
+  margin-left: 1em;
+}
+
+.list {
+  padding: 0.5em;
+}
+
+.list h1 {
+  text-align: center;
+}
+
+.list ol {
+  text-align: left;
+}
+
+.top_grids {
+  width: 35%;
+  margin: auto;
+  padding-bottom: 1em;
+  height: 200px;
+  overflow-y: scroll;
+  background: #f2f2f2;
+  color: #DFA400;
+  font-family: 'Yantramanav';
+  font-size: 1.2em;
+  border-radius: 2em;
+}
+
+/* ::-webkit-scrollbar{} */
+
+.price {
+  margin-top: 2em;
+}
+
+.price h4 {
+  text-align: center;
+  font-family: 'Open Sans', serif;
+}
+
+.price i {
+  color: #5C5A5F;
+}
+
+#energy {
+  margin-bottom: 4em;
+}
+
+/* CAROUSEL SLIDER */
+
+.slick-prev:before, .slick-next:before {
+  color: orange;
+}
+
+.your-class {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.slider_tile {
+  padding: 1em;
+}
+
+.slider_tile:focus {
+  outline: none;
+}
+
+.slider_img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #DFA400;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.slide_content {
+  text-align: center;
+}
+
+.slide_content p {
+  color: #DFA400;
+  font-size: 1.2em;
+  font-family: 'Open Sans', serif;
+  margin: 1em;
+}

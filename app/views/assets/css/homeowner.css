@@ -1,143 +1,191 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
   background-color: white;
-  height:100vh;
+  height: 100vh;
+  font-family: 'Open Sans', serif;
   overflow-x: hidden;
 }
-.top{
-  height:auto;
-  background-image:url(https://www.hoomanaspamaui.com/wp-content/uploads/2014/07/africa.jpg);
+
+/*===================== HOMEOWNER NAVBAR========================== */
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.home {
+  color: white;
+  text-decoration: underline;
+}
+
+.owner-img {
+  height: 50px;
+  width: 50px;
+}
+
+.top {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/managers-0.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  -webkit-filter: contrast(90%);
+  height: auto;
   /* border:2px solid blue; */
-  color:white;
+  color: white;
   margin-bottom: 4em;
 }
-.nav{
+
+.nav {
   height: auto;
-  margin:1em;
+  margin: 1em;
   /* border:2px solid red; */
 }
-.nav ul li{
+
+.nav ul li {
   display: inline-block;
   margin-left: 0.5em;
 }
-.right{
+
+.right {
   margin-right: 2em;
-  float:right;
+  float: right;
 }
 
-
-.main{
-  margin-top: 8em;
-  margin-bottom: 4em;
+.right span {
+  font-weight: 900;
 }
 
-.stats{
+/*================== HOMEOWNER STATS======================= */
+
+.main {
+  margin-top: 3em;
+}
+
+.stats {
   height: 70vh;
+  margin-top: 2.4em;
 }
 
-.bar{
-  width:90%;
-  margin-top:1em;
+.bar {
+  width: 90%;
+  margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom:1em;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  margin-bottom: 1em;
+  border-radius: 3em;
 }
 
-.bar-text{
+.bar-text {
   text-align: center;
-  border: 1px solid orange;
-  color:green;
-  background-color: orange;
-  width:90%;
-  padding:10px;
-  margin-top:1em;
+  color: green;
+  background-color: #fff2e6;
+  width: 90%;
+  padding: 10px;
+  margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom:1em;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  margin-bottom: 1em;
+  border-radius: 3em;
+  font-size: 1.2em;
 }
 
-.well{
-  border:none;
-  background-color: green;
+.wallet {
+  font-family: 'Open Sans', serif;
+  text-align: center;
+  padding-top:0.6em;
+  padding-bottom:0.6em;
+  background-color: #CADED2;
+  border: 0;
+  color: green;
+  max-width: 50%;
+  outline: none;
+  border-radius: 3em;
+  margin: auto;
 }
 
-.sample-image{
+.well {
+  color: green;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #ecf9f2;
+}
+
+.sample-image {
   background-image: url(https://images.homedepot-static.com/productImages/2734b49c-6daa-47e1-84c4-42e40bf24c26/svn/newtechwood-tile-samples-us-qd-zx-ok-s-64_400_compressed.jpg);
   background-size: cover;
-  padding:20px;
-  height:10vh;
+  padding: 20px;
+  height: 10vh;
 }
 
-.map{
+.map {
   margin-top: 2em;
-  height:30vh;
+  height: 30vh;
   background-repeat: no-repeat;
   background-image: url(https://unifaceinfo.com/wp-content/uploads/2014/01/u96_htmlwidget_preview.png);
   background-size: cover;
 }
-.tile-top{
-}
-.tile-top ul li{
+
+.tile-top ul li {
+  color: #00334d;
   display: inline-block;
-  margin-top:0.6em;
+  margin-top: 0.6em;
 }
 
-.progress{
-  width:70%;
-  margin:auto;
+.progress {
+  border-radius: 1em;
+  width: 70%;
+  margin: auto;
 }
 
-.progress-bar{
-  color:grey;
-  background-color: grey;
-}
-.progress-label {
-    float: left;
-    margin-right: 1em;
-}
-
-.filter-btns{
-  text-align: center;
-}
-.filter-btns .btn-default{
-  border:1px solid grey;
-  font-weight: bold;
-  transition: .4s;
-  letter-spacing: 1px;
+.progress-bar {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius:20px;
-  border-bottom-right-radius:20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.btn-default:hover{
-  background-color: grey;
-  color:white;
-  transition: .4s;
-}
-.tile-body{
-  background-color: #f2f2f2;
-}
-.details-box{
-  border:2px solid blue;
-}
-.ct-square{
-  height:200px;
-  width:100%;
-}
-.tile-body h3{
+.filter-btns {
   text-align: center;
 }
-.box{
-  border-radius:30px;
+
+.filter-btns .btn-default {
+  border: 1.8px solid #00334d;
+  transition: .4s;
+  letter-spacing: 1px;
+  margin-left: 1em;
+  border-radius: 2em;
+  font-size: 10px;
+}
+
+.btn-default:hover {
+  background-color: #00334d;
+  color: white;
+  transition: .4s;
+}
+
+.tile-body {
   background-color: #f2f2f2;
-  max-height:65vh;
+  min-height: 250px;
+}
+
+.details-box {}
+
+.ct-square {
+  height: 200px;
+  width: 100%;
+}
+
+.tile-body h5 {
+  text-align: center;
+}
+
+.box {
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  max-height: 65vh;
+}
+
+.graph {
+  height: 200px;
+  width: 100%;
 }

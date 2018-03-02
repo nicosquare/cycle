@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('../fonts/Yantramanav-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*===================== HOMEOWNER NAVBAR========================== */
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.right a {
+  color: white;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.right span {
+  font-weight: bolder;
+}
+
+.owner-img {
+  height: 50px;
+  width: 50px;
+}
+
+.top {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/managers-0.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(90%);
+  height: auto;
+  /* border:2px solid blue; */
+  color: white;
+  margin-bottom: 4em;
+  font-family: 'Open Sans', serif;
+}
+
+.nav {
+  height: auto;
+  margin: 1em;
+  /* border:2px solid red; */
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.right {
+  margin-right: 2em;
+  float: right;
+}
+
+.right span {
+  font-weight: bolder;
+}
+
+/* UTILITY COMPANY DETAILS STYLING */
+
+.page-header {
+  text-align: center;
+  border: none;
+}
+
+.page-header h1 {
+  font-size: 1.4em;
+  color: #42496C;
+  font-family: 'Yantramanav';
+}
+
+.page-header h2 {
+  font-family: 'Open Sans', serif;
+  font-size: 1.1em;
+  margin: 1em;
+}
+
+.homes_cnt {
+  color: #DFA400;
+}
+
+.page-header .homes_cnt i {
+  padding: 2px;
+  border: 2px solid #DFA400;
+  border-radius: 50%;
+  color: #DFA400;
+}
+
+.page-header .active_cnt {
+  color: #54936F;
+}
+
+
+.page-header .active_cnt i {
+  padding: 2px;
+  border: 2px solid #54936F;
+  border-radius: 50%;
+  color: #54936F;
+}
+
+
+/* CONTENT RIGHT */
+.wallet_det {
+  margin-top: 4em;
+}
+
+.wallet {
+  font-family: 'Yantramanav';
+  text-align: center;
+  padding-top:0.6em;
+  padding-bottom:0.6em;
+  background-color: #CADED2;
+  border: 0;
+  color: green;
+  max-width: 50%;
+  outline: none;
+  border-radius: 3em;
+  margin: auto;
+}
+.wallet:hover {
+  cursor:pointer;
+  color: black;
+}
+
+.wallet span {
+  color:#00334d;
+}
+
+.map {
+  margin-top:1em;
+}
+
+.util_main {
+  /* border: 1px solid red; */
+}
+
+.wallet_img {
+  height: 300px;
+  width: 650px;
+  margin:auto;
+}
+
+.map_img {
+  border-radius: 10%;
+}
