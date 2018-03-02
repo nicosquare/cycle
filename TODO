@@ -1,0 +1,43 @@
+/**
+Tech state to date: 29/01/2018
+**/
+
+// Hardware
+
+- Proxíma meta: Crear pre-prototipo de medición de energía
+- Siguiente meta: Hacer pruebas e integrar con servicios en nube
+
+TAREAS:
+
+- Crear driver de SPI
+- Probar driver con un periférico más sencillo
+- Probar Driver con sensor de energía
+- Integrar dispositivo con IBM Cloud
+- Montar mini-demo con batería y fuente solar
+
+// Software
+
+- Proxíma meta: Crear demo navegable
+- Siguiente meta: Integrar servicios de IBM
+
+TAREAS:
+
+- Definir requerimientos en Assets para decirle a Design team
+- Diseñar Landing page completa
+- Programar la interfaz navegable
+- Aspiración de aprender
+ 
+// A comunicar:
+
+- Proyección con Cycle:
+
+-- Desarrollar hardware: pre prototipo, prototipo, test bench y piloto
+-- Desarrollar software: interfaz (backend, frontend), machine learning, cryptocurrency, UX/UI
+
+- Intenciones con Cycle: ¿cuales son sus planes? ¿contemplarían seguir trabajando para Cycle?
+
+- Instrucciones:
+
+-- Cambiar a rama prototype
+-- Seguir documento Dev Tasks
+-- Tener como meta un demo avanzado para el evento
